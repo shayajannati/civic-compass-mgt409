@@ -1,15 +1,37 @@
 {% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+{% endblock %}
 {% block content %}
 <section class="hero">
-  <h1>Who in government can actually fix this?</h1>
-  <p class="lede">Describe your problem in plain words. Civic Compass works out whether it belongs to your city, your state or the federal government,
-    shows you the responsible office with <strong>verified, sourced contact details</strong>, explains why, and drafts a letter you can edit and send yourself.</p>
-  <ol class="steps" aria-label="How it works">
-    <li><span>1</span> Describe your concern</li>
-    <li><span>2</span> See the right office &amp; why</li>
-    <li><span>3</span> Review your letter</li>
+  <p class="eyebrow">Civic navigation for U.S. residents</p>
+  <h1 class="tagline">Know where to turn.</h1>
+  <p class="lede justify">Describe your problem in plain words. Civic Compass works out whether it belongs to your city, your
+    state or the federal government, shows you the responsible office with <strong>verified, sourced contact
+    details</strong>, explains why, and drafts a letter you can edit and send yourself.</p>
+</section>
+
+<section class="how" id="how-it-works" aria-labelledby="how-title">
+  <h2 id="how-title" class="section-label">How it works</h2>
+  <ol class="steps">
+    <li class="step">
+      <span class="step-num" aria-hidden="true">1</span>
+      <h3>Describe your concern</h3>
+      <p>Tell us what is happening, your ZIP code and the outcome you want, in your own words.</p>
+    </li>
+    <li class="step">
+      <span class="step-num" aria-hidden="true">2</span>
+      <h3>See the right office &amp; why</h3>
+      <p>We match your concern to the city, state or federal office with authority to act, with the source and date each contact was checked.</p>
+    </li>
+    <li class="step">
+      <span class="step-num" aria-hidden="true">3</span>
+      <h3>Review your letter</h3>
+      <p>Edit the draft, confirm it is accurate, then copy or download it and send it yourself.</p>
+    </li>
   </ol>
-  <p class="coverage-note"><strong>Pilot coverage:</strong> federal offices and members of Congress nationwide · all Connecticut state legislators and key state agencies ·
+  <p class="coverage-note justify"><strong>Pilot coverage:</strong> federal offices and members of Congress nationwide · all Connecticut state legislators and key state agencies ·
     deepest city coverage for <strong>New Haven, CT</strong>. Elsewhere we show what we can verify and link to official directories.</p>
 </section>
 
@@ -20,17 +42,23 @@
 </div>
 {% endif %}
 
+<h2 class="start-heading" id="start">Start with your concern.</h2>
+
 <div class="layout">
   <section class="card form-card" aria-labelledby="form-title">
-    <h2 id="form-title">1 · Your concern</h2>
+    <h2 id="form-title" class="card-title"><span class="card-num">1</span> Your concern</h2>
     <form id="issue-form" novalidate>
       <div class="row two">
         <label>Your name <span class="opt">(for the letter signature)</span>
           <input name="name" autocomplete="name" maxlength="80" placeholder="e.g. Jordan Rivera">
         </label>
         <label>ZIP code <span class="req">*</span>
-          <input name="zip" inputmode="numeric" pattern="\d{5}" maxlength="5" required placeholder="06511" autocomplete="postal-code">
+          <input name="zip" inputmode="numeric" pattern="\d{5}" maxlength="5" required placeholder="06511" autocomplete="postal-code" aria-describedby="zip-map-label">
         </label>
+      </div>
+      <div class="zip-map-wrap" id="zip-map-wrap" hidden>
+        <div id="zip-map" class="zip-map" role="region" aria-label="Map of the ZIP code area"></div>
+        <p class="map-caption" id="zip-map-label" aria-live="polite"></p>
       </div>
       <label>Issue category <span class="req">*</span>
         <select name="category" required>
@@ -48,7 +76,7 @@
       </label>
       <details class="more">
         <summary>Add more detail (optional)</summary>
-        <label>Street address <span class="opt">(only to pin down your exact districts; sent once to the U.S. Census Geocoder, never stored)</span>
+        <label>Street address <span class="opt">(only to pin down your exact districts; sent once to the U.S. Census Geocoder, never stored, never sent to the map)</span>
           <input name="street" maxlength="120" autocomplete="street-address" placeholder="e.g. 165 Church St">
         </label>
         <label>Anything else we should know?
@@ -63,9 +91,9 @@
 
   <section class="results" aria-live="polite" aria-busy="false" id="results">
     <div class="placeholder card">
-      <svg viewBox="0 0 120 120" aria-hidden="true" class="ph-compass"><circle cx="60" cy="60" r="52" fill="none" stroke="#c9d8cf" stroke-width="4"/><path d="M60 18l14 42-14 42-14-42z" fill="#e9e2cf"/><path d="M60 18l14 42H46z" fill="#3c9a70"/></svg>
-      <h2>2 · Your route will appear here</h2>
-      <p>Try an example:</p>
+      <svg viewBox="0 0 120 120" aria-hidden="true" class="ph-compass"><circle cx="60" cy="60" r="52" fill="none" stroke="#493D50" stroke-width="2"/><circle cx="60" cy="60" r="42" fill="none" stroke="#929A58" stroke-width="1" opacity=".6"/><path d="M60 22l11 38H49z" fill="#653D48"/><path d="M60 98L49 60h22z" fill="#929A58"/><circle cx="60" cy="60" r="4" fill="#F4F0EA" stroke="#493D50" stroke-width="2"/></svg>
+      <h2>Your route will appear here</h2>
+      <p>Or try an example:</p>
       <div class="examples">
         <button class="chip" type="button" data-example="heat">No heat — New Haven</button>
         <button class="chip" type="button" data-example="ssa">Social Security delay</button>
@@ -80,4 +108,9 @@
   <div class="card loading"><div class="spinner" aria-hidden="true"></div><p class="loading-text">Looking up your districts…</p></div>
 </template>
 {% endblock %}
-{% block scripts %}<script src="/static/app.js" defer></script>{% endblock %}
+{% block scripts %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="/static/app.js" defer></script>
+<script src="/static/zipmap.js" defer></script>
+{% endblock %}

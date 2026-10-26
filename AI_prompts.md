@@ -186,3 +186,242 @@ Yes! Please create the GitHub repository and push Civic Compass.
 
 Please don't make any additional feature changes. We can update the Impact section after completing the user study.
 Once GitHub publication is verified, tell me exactly what I need to submit on Canvas. Do not submit to Canvas yet.
+
+---
+
+## Prompt 5 — 2026-10-26
+
+We are making a carefully scoped visual redesign and a few content additions to Civic Compass, our completed MGT 409 final project.
+Existing repository: https://github.com/shayajannati/civic-compass-mgt409
+Local project: ~/Desktop/AI Class/civic compass
+The application is already functional, tested, and published. All 28 offline tests passed, the latest live routing evaluation passed 18/18 cases, and the report and slides have been generated. Preserve this functionality and all existing verified evidence.
+I want the website to feel more polished, elegant, and cohesive. Think sophisticated editorial design meets modern civic technology: thoughtful typography, generous whitespace, restrained colors, beautiful alignment, and professional details.
+Implement the following changes.
+1. NEW COLOR PALETTE
+Replace the current website palette with the following fig-inspired colors:
+
+* Kung Fu — #653D48 (muted burgundy)
+* Totally Cool — #929A58 (sage/olive green)
+* Plum Island — #493D50 (deep plum)
+* Winter Balsam — #304849 (dark evergreen)
+* Angelic Choir — #BB6D60 (warm terracotta)
+* Herald of Spring — #A66B70 (dusty rose)
+
+Use a soft ivory background, approximately #F4F0EA, where appropriate.
+Suggested hierarchy:
+
+* Deep plum and evergreen for primary typography, headers, and important elements.
+* Burgundy for primary buttons, selected navigation elements, and branding.
+* Sage green for accents and small decorative details.
+* Terracotta and dusty rose sparingly for highlights.
+* Warm ivory for the overall page background.
+
+The palette should feel cohesive and sophisticated, not overly colorful. Avoid large competing blocks of saturated color.
+Please use CSS variables for the palette to make future changes easy.
+Maintain readable color contrast, including buttons, form labels, navigation, alerts, and disabled controls.
+2. TYPOGRAPHY
+Use these Google Fonts:
+Alata
+
+* Main headings
+* Navigation tabs
+* Buttons
+* Step numbers
+* Prominent interface labels
+
+Cardo
+
+* Body paragraphs
+* Explanatory text
+* Longer descriptive content
+
+Use appropriate fallback font stacks in case Google Fonts cannot load.
+The contrast between modern Alata headings and elegant Cardo body text should create a sophisticated editorial look.
+Pay attention to typography hierarchy, line spacing, font weights, letter spacing, and readability on both desktop and mobile.
+Do not reduce text readability merely for aesthetics.
+3. NAVIGATION
+Make all navigation tabs UPPERCASE.
+Examples:
+
+* FIND HELP
+* HOW IT WORKS
+* OUR PURPOSE
+
+Use Alata with subtle, consistent letter spacing.
+Keep the navigation elegant, balanced, and responsive. Improve spacing and hover/active states as needed.
+Add a new navigation tab called OUR PURPOSE, described below.
+Do not remove any existing navigation functionality.
+4. HOMEPAGE TAGLINE
+Replace the existing tagline:
+"From your concern to the right government office."
+With:
+"Know where to turn."
+Preserve this exact wording, capitalization, and punctuation.
+Style it as an elegant, prominent headline in Alata.
+Keep the supporting explanatory paragraph below so new users immediately understand what Civic Compass does.
+5. MAIN FORM HEADING
+Replace:
+"Who in government can actually fix this?"
+With:
+"Start with your concern."
+Use Alata and our new color palette.
+Preserve the existing issue-submission form and all its functionality. The wording should feel approachable, reassuring, and sophisticated.
+6. FULLY JUSTIFIED EXPLANATORY PARAGRAPHS
+There are two specific homepage paragraphs I want justified.
+First:
+"Describe your problem in plain words. Civic Compass works out whether it belongs to your city, your state or the federal government, shows you the responsible office with verified, sourced contact details, explains why, and drafts a letter you can edit and send yourself."
+Second:
+"Pilot coverage: federal offices and members of Congress nationwide · all Connecticut state legislators and key state agencies · deepest city coverage for New Haven, CT. Elsewhere we show what we can verify and link to official directories."
+Apply full justification so the body text aligns cleanly on both left and right margins.
+Preserve the current bold emphasis, wording, punctuation, and informational accuracy.
+Use a comfortable maximum line width, balanced horizontal padding, and appropriate line spacing. Avoid oversized gaps between words. On narrow mobile screens, where justification produces awkward word spacing, left alignment is acceptable.
+Do not apply full justification indiscriminately to headings, forms, buttons, or other short text.
+7. CENTER THE THREE NUMBERED STEPS
+On the homepage, the explanation describing how Civic Compass works has three numbered steps (1, 2, 3).
+Center-align the content within each step, including:
+
+* The step number
+* The step heading
+* The explanatory text
+
+The three steps should look balanced and visually consistent, with appropriate spacing and matching proportions.
+Keep the existing wording and sequence.
+Use the new palette and typography, with Alata for the headings/numbers and Cardo for descriptions.
+8. RETAIN AND REFINE THE COMPASS LOGO
+I considered alternative symbols but decided that Civic Compass should retain a compass as its logo.
+Keep the existing compass concept.
+You may subtly refine its strokes, proportions, spacing, and color to fit the new branding, but do not replace it with a star, speech bubble, government building, or unrelated symbol.
+The compass should look clean, minimalist, elegant, and recognizable at small sizes.
+Keep the CIVIC COMPASS wordmark aligned beautifully with the symbol.
+9. CREATE AN "OUR PURPOSE" PAGE
+Add a functioning navigation tab labeled:
+OUR PURPOSE
+Create a dedicated, attractive page explaining why Civic Compass exists.
+Use the following content direction.
+Page heading:
+"Government should be easier to navigate."
+Introductory statement:
+"Knowing where to turn shouldn't require knowing how every level of government works."
+Explain that many people face barriers to civic participation because it can be difficult to identify which government official or agency is responsible for their particular concern.
+Describe Civic Compass as a tool designed to make civic engagement more accessible by helping people:
+
+* Identify the appropriate government office or agency.
+* Find verifiable contact information.
+* Understand why that office is relevant to their concern.
+* Prepare clear, personalized correspondence.
+
+Emphasize that the tool supports civic participation without replacing the individual's voice.
+Users maintain control over their messages and can review, edit, and send them themselves.
+Explain Civic Compass's commitment to:
+
+* Accessible civic engagement
+* Nonpartisan assistance
+* Accuracy and verified sources
+* Transparency
+* User privacy and control
+
+Suggested concluding statement:
+"Making civic participation more accessible, one concern at a time."
+The page should be visually sophisticated, with generous whitespace, refined editorial typography, and the new color palette.
+Avoid generic marketing language or unsupported claims about effectiveness.
+Do not suggest that Civic Compass is an official government website.
+10. ADD A SIMPLE INTERACTIVE MAP
+I would like Civic Compass to display a map when someone enters their ZIP code.
+The map should be functional, not a decorative image.
+Desired functionality:
+
+* When the user enters a valid five-digit ZIP code, display or update a small interactive map showing the approximate ZIP-code area.
+* Zoom to the relevant geographic area.
+* Display a clear location label, where supported by the available geographic data.
+* Let users pan and zoom.
+* Style the surrounding map interface consistently with the new website design.
+
+Leaflet is a reasonable lightweight option if it integrates cleanly with the existing stack.
+Use legitimate, properly attributed map tiles and verifiable geographic data. Do not use invented coordinates or misleading geographical boundaries.
+Important: ZIP codes can span multiple legislative districts.
+The map must not imply that a ZIP code identifies the user's precise street address or a unique elected representative.
+If a ZIP code is ambiguous, retain the application's existing clarification process.
+For this version, a small location map is sufficient. Do not build a complicated political boundary visualization now.
+The map must not break the existing form, slow down the AI workflow significantly, or introduce API-key requirements or unnecessary paid dependencies.
+If network access to map tiles is unavailable, the rest of the app should remain fully functional with a graceful fallback.
+Do not access the user's browser geolocation or transmit a street address to an unrelated map service without clear user authorization.
+11. FUTURE DEVELOPMENT — NATIONWIDE EXPANSION
+Expand the Future Development / Next Steps content in the OUR PURPOSE page and the report.
+Clearly explain that the long-term goal is to expand Civic Compass from its current Connecticut/New Haven pilot to comprehensive nationwide coverage across all 50 states.
+Potential expansions should include:
+
+* State legislators and government agencies nationwide.
+* Municipal departments and local officials across US cities and counties.
+* More detailed issue-specific agency routing.
+* Regular automatic updates to officeholders, jurisdiction records, and official contact information.
+* Broader accessibility and language support.
+
+Also explicitly include:
+Interactive jurisdiction overlays
+In a future version, users could view relevant congressional, state legislative, municipal, and other applicable government boundaries directly on the map.
+These overlays would help users understand the geographic areas represented by different offices and how governmental jurisdictions overlap.
+Use authoritative geographic data and make clear that exact representation may require a full street address.
+This is a FUTURE feature, not something to implement in the current project.
+Add these plans to the existing report's Limitations & Next Steps section, but accurately distinguish future goals from implemented functionality.
+12. DESIGN CONSISTENCY
+Apply the updated brand identity consistently across:
+
+* Homepage
+* Navigation
+* Form controls and buttons
+* Results and recommendation cards
+* Letter-generation interface
+* OUR PURPOSE page
+* Map container
+* Footer
+* Error and informational messages
+
+Maintain accessibility, responsive design, and good contrast.
+The overall impression should be refined and intentional, not a generic AI-generated dashboard.
+Avoid gratuitous animations, excessively rounded elements, bright gradients, and unnecessary decorative graphics.
+13. VERY IMPORTANT: PRESERVE THE WORKING APPLICATION
+Do not change:
+
+* The two-agent architecture or model configuration
+* Portkey integration
+* Government datasets or the deterministic jurisdiction lookup rules
+* Existing routing logic
+* Existing safety safeguards
+* Letter-generation logic
+* Privacy protections
+* Tokenomics instrumentation or actual benchmark results
+* Existing verified evaluation evidence
+
+Do not add a new required paid API.
+The project already works well. I am requesting a visual redesign, an OUR PURPOSE page, a small ZIP-code map, and future-roadmap additions — not a complete rebuild.
+Do not fabricate new test results or modify previous evaluation evidence to make the redesign appear successful.
+14. TESTING AND REVIEW
+Before considering the changes complete:
+
+1. Run the existing automated tests.
+2. Verify the main application flow still works.
+3. Test the OUR PURPOSE navigation and page.
+4. Test the map with valid, invalid, and ambiguous ZIP codes.
+5. Check the interface at desktop and mobile widths.
+6. Check for broken fonts, layout overflow, contrast problems, and console errors.
+7. Take genuine screenshots of the updated pages.
+8. Check whether the redesign requires updating screenshots in report.html or slides.html.
+9. If necessary, regenerate the affected deliverables using real screenshots and verified evidence.
+10. Verify that report.html remains between 10 and 15 printed letter-size pages and slides.html remains within 10 slides.
+11. Preserve the accuracy and source documentation of the existing report.
+12. Append this prompt verbatim to AI_prompts.md without changing earlier prompts.
+
+Work efficiently because the project deadline is October 26, 2026, at 6:00 PM ET.
+IMPORTANT APPROVAL STEP
+Please implement the changes locally, run the relevant tests, and show me the updated website for review.
+Do NOT push to GitHub yet.
+Do NOT submit anything to Canvas.
+Do NOT overwrite or lose the existing working version.
+Once I review and approve the redesign, I will explicitly authorize the final commit and push to the existing GitHub repository.
+Start implementing the requested changes now, prioritizing polish, stability, and the submission deadline.
+
+---
+
+## Prompt 6 — 2026-10-26
+
+I approve the redesign. Commit it, merge into main without force-pushing, push to the existing GitHub repo, and verify with an anonymous clone.

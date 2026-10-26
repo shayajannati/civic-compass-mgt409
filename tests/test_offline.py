@@ -216,3 +216,24 @@ def test_missing_key_gives_setup_error(monkeypatch):
     monkeypatch.setattr(llm, "_client", None)
     r = client.post("/api/route", json=HEAT)
     assert r.status_code == 503 and r.json()["setup"] is True and "PORTKEY_API_KEY" in r.json()["error"]
+
+
+# ---------- redesign additions: purpose page and display-only ZIP map ----------
+def test_purpose_page_and_nav():
+    r = client.get("/purpose")
+    assert r.status_code == 200 and "Government should be easier to navigate." in r.text
+    assert "Not an official government website" in r.text
+    home = client.get("/").text
+    assert "Know where to turn." in home and "Start with your concern." in home
+    for tab in ("FIND HELP", "HOW IT WORKS", "OUR PURPOSE", "SOURCES &amp; COVERAGE"):
+        assert tab in home
+
+
+def test_zip_map_api(monkeypatch):
+    from app import zipmap
+    monkeypatch.setattr(zipmap, "_boundary", lambda z: None)        # offline: no TIGERweb call
+    assert client.get("/api/zip/12ab5").status_code == 400
+    assert client.get("/api/zip/00000").json()["found"] is False
+    d = client.get("/api/zip/06001").json()                          # spans CT-1 and CT-5
+    assert d["found"] and d["boundary"] is None and abs(d["lat"] - 41.8) < 0.3
+    assert any("2 congressional districts" in n for n in d["ambiguity"])

@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}Civic Compass{% endblock %}</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%231f3a5f'/%3E%3Cpath d='M16 5l4 11-4 11-4-11z' fill='%23f6f1e4'/%3E%3Cpath d='M16 5l4 11h-8z' fill='%232f7d5b'/%3E%3C/svg%3E">
+  <title>{% block title %}Civic Compass · Know where to turn.{% endblock %}</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14.5' fill='%23F4F0EA' stroke='%23493D50' stroke-width='2'/%3E%3Cpath d='M16 4.5l3.6 11.5H12.4z' fill='%23653D48'/%3E%3Cpath d='M16 27.5l-3.6-11.5h7.2z' fill='%23929A58'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap">
   <link rel="stylesheet" href="/static/style.css">
+  {% block head %}{% endblock %}
 </head>
 <body>
   <a class="skip" href="#main">Skip to main content</a>
@@ -13,19 +17,23 @@
     <div class="wrap header-inner">
       <a class="brand" href="/" aria-label="Civic Compass home">
         <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
-          <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="2.5"/>
-          <path d="M24 8l6 16-6 16-6-16z" fill="#f6f1e4"/>
-          <path d="M24 8l6 16H18z" fill="#3c9a70"/>
-          <circle cx="24" cy="24" r="2.6" fill="#1f3a5f"/>
+          <circle cx="24" cy="24" r="21.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width=".7" opacity=".45"/>
+          <path d="M24 2.5v4M24 41.5v4M2.5 24h4M41.5 24h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M24 9l5 15H19z" fill="#653D48"/>
+          <path d="M24 39l-5-15h10z" fill="#929A58"/>
+          <circle cx="24" cy="24" r="2.2" fill="#F4F0EA" stroke="currentColor" stroke-width="1.2"/>
         </svg>
-        <span>
-          <span class="brand-name">Civic Compass</span>
-          <span class="brand-tag">From your concern to the right government office.</span>
+        <span class="brand-text">
+          <span class="brand-name">CIVIC COMPASS</span>
+          <span class="brand-tag">Know where to turn.</span>
         </span>
       </a>
-      <nav aria-label="Main">
-        <a href="/" {% if request.url.path == '/' %}aria-current="page"{% endif %}>Find help</a>
-        <a href="/sources" {% if request.url.path == '/sources' %}aria-current="page"{% endif %}>Sources &amp; coverage</a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="/" {% if request.url.path == '/' %}aria-current="page"{% endif %}>FIND HELP</a>
+        <a href="/#how-it-works">HOW IT WORKS</a>
+        <a href="/purpose" {% if request.url.path == '/purpose' %}aria-current="page"{% endif %}>OUR PURPOSE</a>
+        <a href="/sources" {% if request.url.path == '/sources' %}aria-current="page"{% endif %}>SOURCES &amp; COVERAGE</a>
       </nav>
     </div>
   </header>
@@ -33,11 +41,17 @@
     {% block content %}{% endblock %}
   </main>
   <footer class="site-footer">
-    <div class="wrap">
-      <p><strong>Civic Compass never sends anything for you.</strong> It drafts; you review, edit and decide. It is not legal advice.
-      Names, addresses and descriptions are not stored. Directory data comes from official sources listed on
-      <a href="/sources">Sources &amp; coverage</a>. AI model: gpt-6-luna (MGT 409 course model).</p>
-      <p>If anyone is in immediate danger, call 911.</p>
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-brand">CIVIC COMPASS</p>
+        <p>An independent, nonpartisan student project (Yale SOM, MGT 409). Not an official government website.</p>
+      </div>
+      <div>
+        <p><strong>Civic Compass never sends anything for you.</strong> It drafts; you review, edit and decide. It is not legal advice.
+        Names, addresses and descriptions are not stored. Directory data comes from official sources listed on
+        <a href="/sources">Sources &amp; coverage</a>. AI model: gpt-6-luna (MGT 409 course model).</p>
+        <p>If anyone is in immediate danger, call 911.</p>
+      </div>
     </div>
   </footer>
   {% block scripts %}{% endblock %}

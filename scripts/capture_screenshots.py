@@ -76,6 +76,8 @@ def main() -> None:
         page.goto(BASE + "/")
         shot(page, "01_home")
         fill(page, HEAT)
+        page.wait_for_selector("#zip-map .leaflet-interactive", timeout=15_000)
+        page.wait_for_timeout(1500)  # let map tiles finish loading
         shot(page, "02_form_filled", ".form-card")
 
         route(page, HEAT)
@@ -106,9 +108,23 @@ def main() -> None:
         page.goto(BASE + "/sources")
         shot(page, "13_sources")
 
+        page.goto(BASE + "/purpose")
+        shot(page, "15_purpose", full=True)
+
+        page.goto(BASE + "/")  # map: ZIP spanning two congressional districts, then an unknown ZIP
+        page.fill("[name=zip]", "06001")
+        page.wait_for_selector("#zip-map .leaflet-interactive", timeout=15_000)
+        page.wait_for_timeout(1500)
+        shot(page, "16_map_ambiguous_zip", "#zip-map-wrap")
+        page.fill("[name=zip]", "00000")
+        page.wait_for_timeout(1200)
+        shot(page, "17_map_unknown_zip", "#zip-map-wrap")
+
         mobile = browser.new_page(viewport={"width": 390, "height": 844}, device_scale_factor=2, is_mobile=True)
         mobile.goto(BASE + "/")
         shot(mobile, "14_mobile_home")
+        mobile.goto(BASE + "/purpose")
+        shot(mobile, "18_mobile_purpose")
         browser.close()
 
 

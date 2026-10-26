@@ -118,11 +118,11 @@ def monthly(users: int, per_run: float) -> float:
 
 ARCH_SVG = """
 <svg viewBox="0 0 1000 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Civic Compass architecture diagram" class="arch">
-<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1f3a5f"/></marker></defs>
-<style>.d{fill:#fff;stroke:#1f3a5f;stroke-width:2}.l{fill:#2f7d5b;stroke:#2f7d5b}.u{fill:#f6f1e4;stroke:#9a8b62;stroke-width:2}
-.t{font:600 15px 'Segoe UI',system-ui,sans-serif;fill:#1f3a5f}.tw{font:700 15px 'Segoe UI',system-ui,sans-serif;fill:#fff}
-.s{font:12.5px 'Segoe UI',system-ui,sans-serif;fill:#4b5563}.sw{font:12.5px 'Segoe UI',system-ui,sans-serif;fill:#e3f0e8}
-.a{stroke:#1f3a5f;stroke-width:2;fill:none;marker-end:url(#ar)}</style>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#493D50"/></marker></defs>
+<style>.d{fill:#fff;stroke:#493D50;stroke-width:2}.l{fill:#653D48;stroke:#653D48}.u{fill:#F4F0EA;stroke:#929A58;stroke-width:2}
+.t{font:15px Alata,'Avenir Next','Segoe UI',sans-serif;fill:#493D50}.tw{font:15px Alata,'Avenir Next','Segoe UI',sans-serif;fill:#fff}
+.s{font:12.5px 'Segoe UI',system-ui,sans-serif;fill:#5E5660}.sw{font:12.5px 'Segoe UI',system-ui,sans-serif;fill:#EDEFE2}
+.a{stroke:#493D50;stroke-width:2;fill:none;marker-end:url(#ar)}</style>
 <rect class="u" x="10" y="20" width="170" height="78" rx="12"/><text class="t" x="24" y="48">Resident</text><text class="s" x="24" y="68">ZIP, category, facts,</text><text class="s" x="24" y="85">desired outcome</text>
 <rect class="d" x="225" y="20" width="200" height="78" rx="12"/><text class="t" x="239" y="48">Validate + screen</text><text class="s" x="239" y="68">limits, control chars,</text><text class="s" x="239" y="85">injection patterns</text>
 <rect class="d" x="470" y="20" width="230" height="78" rx="12"/><text class="t" x="484" y="48">Geography (no LLM)</text><text class="s" x="484" y="68">ZIP→districts: Census files</text><text class="s" x="484" y="85">street→exact: Census Geocoder</text>
@@ -193,25 +193,26 @@ def report() -> str:
     safe_letter = esc(safe.get("letter") or "")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Civic Compass — MGT 409 Final Report</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
 @page {{ size: letter; margin: 0.6in 0.65in; }}
-:root {{ --navy:#1f3a5f; --green:#2f7d5b; --green-soft:#e3f0e8; --cream:#f6f1e4; --ink:#1d2733; --muted:#5b6673; --line:#ddd6c4; --amber-soft:#fbf1d6; }}
+:root {{ --navy:#493D50; --green:#653D48; --green-soft:#EDEFE2; --cream:#F4F0EA; --ink:#2B2530; --muted:#5E5660; --line:#E1D9CE; --amber-soft:#fbf1d6; }}
 * {{ box-sizing: border-box; }}
-body {{ margin:0; font: 10.5pt/1.45 "Source Sans 3","Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif; color:var(--ink); background:#fbf8f0; }}
+body {{ margin:0; font: 10.5pt/1.45 "Cardo","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; color:var(--ink); background:#F4F0EA; }}
 main {{ max-width: 8.0in; margin: 0 auto; background:#fff; padding: 0.55in 0.6in; box-shadow: 0 0 30px rgba(31,58,95,.08); }}
-h1,h2,h3 {{ font-family: "Source Serif 4", Georgia, serif; color:var(--navy); line-height:1.2; }}
+h1,h2,h3 {{ font-family: "Alata","Avenir Next","Segoe UI",Helvetica,Arial,sans-serif; color:var(--navy); line-height:1.2; }}
 h1 {{ font-size: 28pt; margin: 0 0 4px; }}
 h2 {{ font-size: 17pt; margin: 26px 0 8px; padding-bottom: 4px; border-bottom: 3px solid var(--green); page-break-after: avoid; }}
 h3 {{ font-size: 12.5pt; margin: 16px 0 6px; page-break-after: avoid; }}
 p, li {{ orphans: 3; widows: 3; }}
-a {{ color: #2b4c78; }}
+a {{ color: #653D48; }}
 .title {{ background: var(--navy); color: var(--cream); margin: -0.55in -0.6in 18px; padding: 0.45in 0.6in 0.3in; border-bottom: 6px solid var(--green); }}
 .title h1 {{ color: #fff; }} .title .tag {{ font-size: 13pt; opacity: .9; margin: 0 0 12px; }}
 .title a {{ color: #fff; }} .title table td {{ color: var(--cream); border: 0; padding: 2px 12px 2px 0; }}
 .lead {{ font-size: 12pt; }}
 table {{ width:100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 9.6pt; page-break-inside: auto; }}
 tr {{ page-break-inside: avoid; }}
-th, td {{ text-align:left; padding: 5px 7px; border-bottom: 1px solid #ebe4d2; vertical-align: top; }}
+th, td {{ text-align:left; padding: 5px 7px; border-bottom: 1px solid #E8E1D6; vertical-align: top; }}
 th {{ background: var(--cream); color: var(--navy); }}
 table.small {{ font-size: 8.6pt; }}
 td.pass {{ color: var(--green); font-weight: 700; }} td.fail {{ color: #a23b2a; font-weight: 700; }}
@@ -220,10 +221,10 @@ figure img {{ width: 100%; max-height: 4.4in; object-fit: contain; object-positi
 figure.half {{ display: inline-block; width: 49%; vertical-align: top; }}
 figcaption {{ font-size: 9pt; color: var(--muted); margin-top: 4px; }}
 .callout {{ background: var(--green-soft); border-left: 5px solid var(--green); padding: 10px 14px; border-radius: 6px; margin: 10px 0; page-break-inside: avoid; }}
-.callout.warn {{ background: var(--amber-soft); border-color: #c99a1e; }}
+.callout.warn {{ background: var(--amber-soft); border-color: #B48A3C; }}
 .kpis {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; page-break-inside: avoid; }}
 .kpi {{ background: var(--cream); border-radius: 10px; padding: 10px 12px; }}
-.kpi b {{ display:block; font: 700 18pt Georgia, serif; color: var(--navy); }}
+.kpi b {{ display:block; font: 400 18pt Alata, 'Avenir Next', Arial, sans-serif; color: var(--navy); }}
 .kpi span {{ font-size: 9pt; color: var(--muted); }}
 pre {{ background:#fffdf7; border:1px solid var(--line); border-radius:8px; padding:10px 12px; font: 9pt/1.45 Menlo, Consolas, monospace; white-space: pre-wrap; page-break-inside: avoid; }}
 .arch {{ width: 100%; height: auto; border:1px solid var(--line); border-radius: 10px; background:#fff; }}
@@ -234,7 +235,7 @@ pre {{ background:#fffdf7; border:1px solid var(--line); border-radius:8px; padd
 
 <header class="title">
 <h1>Civic Compass</h1>
-<p class="tag">From your concern to the right government office.</p>
+<p class="tag">Know where to turn.</p>
 <table>
 <tr><td><b>Author</b></td><td>{AUTHOR} · MGT 409 AI Foundations for Managers · Yale SOM · October 26, 2026</td></tr>
 <tr><td><b>Code</b></td><td><a href="{REPO_URL}">{REPO_URL}</a></td></tr>
@@ -287,7 +288,7 @@ pre {{ background:#fffdf7; border:1px solid var(--line); border-radius:8px; padd
 <table><thead><tr><th>Component</th><th>What it does</th><th>Tools / permissions</th></tr></thead><tbody>
 <tr><td><b>Agent 1: Civic Routing Agent</b> (gpt-6-luna)</td><td>Reads the issue and decides the level of government (municipal / state / federal), the primary office, up to 2 secondary offices, an optional elected official for escalation, a plain-language rationale (≤60 words), and flags for emergency, vague input and suspected prompt injection.</td><td>No tools. Strict JSON schema in which <code>primary_id</code> is an <i>enum of the verified candidate IDs</i> built for this request. Output is capped at 1,200 tokens, with low reasoning effort.</td></tr>
 <tr><td><b>Agent 2: Letter-Writing Agent</b> (gpt-6-luna)</td><td>Writes only the subject and body from the resident's facts, using bracketed placeholders for missing details and making one concrete request. It never cites laws the resident did not cite and never claims a duty to respond.</td><td>No tools. Strict JSON schema (subject, body, placeholders). Output is capped at 2,500 tokens. The recipient block, salutation and date are assembled by code from the verified record.</td></tr>
-<tr><td>Deterministic tools (Python + SQL)</td><td>ZIP → possible districts (Census relationship files); street address → exact districts (Census Geocoder, optional, not stored); candidate offices by category and coverage; unique vs. ambiguous officials; verification and the letter checker.</td><td>Read-only SQLite. The only network call is the Census Geocoder, and only when the resident gives a street address.</td></tr>
+<tr><td>Deterministic tools (Python + SQL)</td><td>ZIP → possible districts (Census relationship files); street address → exact districts (Census Geocoder, optional, not stored); candidate offices by category and coverage; unique vs. ambiguous officials; verification and the letter checker; a display-only ZIP-area map (Census 2025 Gazetteer center point + Census TIGERweb boundary, Leaflet with OpenStreetMap tiles) that never affects routing.</td><td>Read-only SQLite. The only network call is the Census Geocoder, and only when the resident gives a street address.</td></tr>
 </tbody></table>
 <p><b>Organization and handoffs.</b> This is a fixed pipeline, not an open-ended loop. Code calls Agent 1 once. Code then validates its choice (the ID is on file, the level is corrected to the record's actual level, and the recipients are saved to a per-run allow-list). The resident chooses a recipient from that allow-list, and code calls Agent 2 once. If the checker finds a serious problem, Agent 2 gets <b>at most one</b> repair attempt, after which remaining problems are redacted. The maximum is three model calls per issue.</p>
 <p><b>Model choice.</b> gpt-6-luna, the course-approved model, is used through Portkey for both agents. Both tasks are short classification and short writing with tightly bounded inputs, so a small, inexpensive model is the right fit. Accuracy comes from the deterministic candidate list and schema constraints rather than from model size.</p>
@@ -390,6 +391,17 @@ tokens: input {heat['usage'][0]['input_tokens']:,}, output {heat['usage'][0]['ou
 <li><b>Evaluation size.</b> {S['routing_cases']} author-written scenarios and no real-user results yet.</li>
 <li><b>Not legal advice, and not delivery.</b> The app does not track replies, deadlines or case status.</li>
 </ul>
+<h3>Implemented in this version vs. future goals</h3>
+<p><b>Implemented now:</b> everything described in Sections 4–7, plus a small ZIP-area map. When a resident types a ZIP code, the form shows the Census ZIP Code Tabulation Area outline (or its Census center point if the boundary service is unavailable), with a label stating that it is an approximate area, not an exact address or district. It also restates the ambiguity notice when the ZIP spans districts. The map is display-only: it does not change routing, uses no geolocation, and sends only the ZIP code.</p>
+<p><b>Long-term goal (not built):</b> grow from the Connecticut/New Haven pilot to comprehensive nationwide coverage across all 50 states.</p>
+<ul>
+<li>State legislators and government agencies nationwide, verified from official sources.</li>
+<li>Municipal departments and local officials across U.S. cities and counties.</li>
+<li>More detailed, issue-specific agency routing.</li>
+<li>Regular automatic updates to officeholders, jurisdiction records and official contact information.</li>
+<li>Broader accessibility and language support.</li>
+<li><b>Interactive jurisdiction overlays (future):</b> show congressional, state legislative, municipal and other relevant boundaries on the map, so residents can see the area each office represents and how jurisdictions overlap. These would use authoritative geographic data such as Census TIGER files, and the app would still say that exact representation may require a full street address.</li>
+</ul>
 <h3>What we would build next</h3>
 <ol>
 <li>Run the user-study protocol with residents and a local tenant or legal-aid organization.</li>
@@ -399,7 +411,7 @@ tokens: input {heat['usage'][0]['input_tokens']:,}, output {heat['usage'][0]['ou
 <li>Add multilingual input and output (Spanish first), with letters in the office's language and a translation for the resident.</li>
 <li>Host it for partner organizations, with an optional case log that the resident controls.</li>
 </ol>
-<p class="small" style="color:#5b6673;font-size:9pt">Development assistant: Claude Code (prompts in AI_prompts.md). Application runtime model: gpt-6-luna only.</p>
+<p class="small" style="color:#5E5660;font-size:9pt">Development assistant: Claude Code (prompts in AI_prompts.md). Application runtime model: gpt-6-luna only.</p>
 </main></body></html>"""
 
 
@@ -408,39 +420,40 @@ def slides() -> str:
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Civic Compass — slides</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
-:root {{ --navy:#1f3a5f; --green:#2f7d5b; --green-soft:#e3f0e8; --cream:#f6f1e4; --ink:#1d2733; --muted:#5b6673; }}
-.reveal {{ font-family: "Source Sans 3","Segoe UI",system-ui,sans-serif; color: var(--ink); font-size: 30px; }}
-.reveal-viewport {{ background: #fbf8f0; }}
-.reveal h1, .reveal h2, .reveal h3 {{ font-family: "Source Serif 4", Georgia, serif; color: var(--navy); text-transform: none; letter-spacing: 0; }}
+:root {{ --navy:#493D50; --green:#653D48; --green-soft:#EDEFE2; --cream:#F4F0EA; --ink:#2B2530; --muted:#5E5660; }}
+.reveal {{ font-family: "Cardo","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; color: var(--ink); font-size: 30px; }}
+.reveal-viewport {{ background: #F4F0EA; }}
+.reveal h1, .reveal h2, .reveal h3 {{ font-family: "Alata","Avenir Next","Segoe UI",Helvetica,Arial,sans-serif; color: var(--navy); text-transform: none; letter-spacing: 0; }}
 .reveal h2 {{ font-size: 1.55em; margin-bottom: .35em; border-bottom: 5px solid var(--green); display: inline-block; padding-bottom: 4px; }}
 .reveal section {{ text-align: left; padding-top: 18px; }}
 .reveal ul {{ display: block; }} .reveal li {{ margin: .28em 0; }}
-.reveal img {{ border: 1px solid #ddd6c4; border-radius: 10px; box-shadow: 0 6px 20px rgba(31,58,95,.12); margin: 0;
+.reveal img {{ border: 1px solid #E1D9CE; border-radius: 10px; box-shadow: 0 6px 20px rgba(31,58,95,.12); margin: 0;
   display: block; max-width: 100%; max-height: 520px; width: auto; height: auto; object-fit: contain; }}
-.reveal img.short {{ max-height: 250px; margin-top: 10px; }}
+.reveal img.short {{ max-height: 205px; margin-top: 8px; }}
 .title-slide {{ background: var(--navy); color: var(--cream); }}
 .reveal .title-slide h1 {{ color: #fff; font-size: 2.6em; margin: 0; }}
 .cols {{ display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }}
 .cols3 {{ display: grid; grid-template-columns: 1.15fr .85fr; gap: 26px; align-items: start; }}
-.big {{ font: 700 2.1em Georgia, serif; color: var(--navy); line-height: 1; }}
+.big {{ font: 400 2.1em Alata, 'Avenir Next', Arial, sans-serif; color: var(--navy); line-height: 1; }}
 .muted {{ color: var(--muted); font-size: .7em; }}
 .pill {{ display:inline-block; background: var(--green); color:#fff; border-radius: 999px; padding: 4px 16px; font-size: .62em; font-weight: 700; }}
 .card {{ background:#fff; border-radius: 14px; padding: 16px 20px; box-shadow: 0 4px 16px rgba(31,58,95,.08); }}
 table {{ font-size: .7em; border-collapse: collapse; width: 100%; }}
 .card table {{ font-size: 1em; }}
-th, td {{ padding: 6px 10px; border-bottom: 1px solid #e5dcc6; text-align: left; }}
+th, td {{ padding: 6px 10px; border-bottom: 1px solid #E1D9CE; text-align: left; }}
 th {{ background: var(--cream); color: var(--navy); }}
 .small {{ font-size: .62em; }}
 .reveal .arch {{ width: 100%; height: auto; max-height: 520px; background: #fff; border-radius: 12px; }}
 </style></head><body>
 <div class="reveal"><div class="slides">
 
-<section data-background-color="#1f3a5f" class="title-slide" style="padding-top:150px">
-<p style="color:#9fd3b9;font-weight:700;letter-spacing:2px;font-size:.6em">MGT 409 · FINAL PROJECT · {AUTHOR}</p>
+<section data-background-color="#493D50" class="title-slide" style="padding-top:150px">
+<p style="color:#C9CF9E;font-weight:700;letter-spacing:2px;font-size:.6em">MGT 409 · FINAL PROJECT · {AUTHOR}</p>
 <h1>Civic Compass</h1>
-<p style="font-size:1.1em;color:#f6f1e4">From your concern to the right government office.</p>
-<p style="font-size:.7em;color:#d9e1ec;max-width:80%">Describe a problem in plain words. Get the office that can actually act (city, state or federal) with verified, sourced contacts, the reason why, and a fact-only letter you send yourself.</p>
+<p style="font-size:1.1em;color:#F4F0EA">Know where to turn.</p>
+<p style="font-size:.7em;color:#E9E3EC;max-width:80%">Describe a problem in plain words. Get the office that can actually act (city, state or federal) with verified, sourced contacts, the reason why, and a fact-only letter you send yourself.</p>
 </section>
 
 <section><h2>The problem</h2>
@@ -458,7 +471,7 @@ th {{ background: var(--cream); color: var(--navy); }}
 <tr><td>Resistbot · Democracy.io · 5 Calls</td><td>No. Elected officials only</td><td>Officials only</td><td>Some</td></tr>
 <tr><td>SeeClickFix 311</td><td>Only in subscribing cities, local services only</td><td>City only</td><td>No</td></tr>
 <tr><td>ChatGPT</td><td>Guesses; no directory</td><td>Can make up contacts</td><td>Yes</td></tr>
-<tr style="background:#e3f0e8"><td><b>Civic Compass</b></td><td><b>City + state + federal agencies and officials</b></td><td><b>Every record has a source URL and date</b></td><td><b>Fact-only, checked, user-sent</b></td></tr></table>
+<tr style="background:#EDEFE2"><td><b>Civic Compass</b></td><td><b>City + state + federal agencies and officials</b></td><td><b>Every record has a source URL and date</b></td><td><b>Fact-only, checked, user-sent</b></td></tr></table>
 <p class="small">It also refuses to guess: ambiguous ZIP → list every possibility → ask for a street address.</p>
 </section>
 
@@ -475,7 +488,7 @@ th {{ background: var(--cream); color: var(--navy); }}
 
 <section><h2>Honest about uncertainty</h2>
 <div class="cols"><div>{img('04_officials_ambiguity', 'Ambiguous ZIP', 'short')}<p class="muted">ZIP 06511 overlaps 5 CT House districts, so the app won't guess…</p></div>
-<div>{img('08_with_street_address', 'Exact districts', 'short')}<p class="muted">…with a street address, the Census Geocoder finds the exact districts. Outside the pilot area, results are labelled "limited coverage".</p></div></div>
+<div>{img('16_map_ambiguous_zip', 'ZIP map with ambiguity notice', 'short')}<p class="muted">The ZIP-area map is approximate and repeats the ambiguity notice.</p>{img('08_with_street_address', 'Exact districts', 'short')}<p class="muted">…with a street address, the Census Geocoder finds the exact districts. Outside the pilot area, results are labelled "limited coverage".</p></div></div>
 </section>
 
 <section><h2>Cost to run (measured)</h2>
@@ -504,8 +517,8 @@ th {{ background: var(--cream); color: var(--navy); }}
 <li>{FACT['congress'] + FACT['ct_leg']} officials and {FACT['ag_nh'] + FACT['ag_ct'] + FACT['ag_us']} agencies verified with sources</li>
 <li>User study (manual vs. app): protocol ready, results <b>pending</b></li></ul></div>
 <div class="small"><p><span class="pill">Next</span></p>
-<ul><li>Pilot with a tenant or legal-aid organization</li><li>Scheduled data refresh after the Nov 3 election</li>
-<li>More CT cities; Spanish</li><li>Category re-check to catch mis-filed issues</li></ul></div></div>
+<ul><li>Nationwide: all 50 states' legislators, agencies, and city and county offices</li><li>Automatic updates to officeholders and contacts (after Nov 3)</li>
+<li>Interactive jurisdiction overlays on the map (future; today it shows only the ZIP area)</li><li>Spanish and broader accessibility; a tenant or legal-aid pilot</li></ul></div></div>
 <p class="muted">Code: {REPO_URL}</p>
 </section>
 

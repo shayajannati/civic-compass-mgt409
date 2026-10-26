@@ -13,7 +13,7 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from . import config, directory, pipeline
+from . import config, directory, pipeline, safety, zipmap
 from .llm import BudgetError, ContentFilterError, ModelError, SetupError
 
 app = FastAPI(title="Civic Compass", docs_url=None, redoc_url=None)
@@ -60,6 +60,19 @@ def sources_page(request: Request):
     agencies = directory.query_all_agencies()
     return templates.TemplateResponse(request, "sources.html",
                                       {"sources": directory.sources(), "agencies": agencies})
+
+
+@app.get("/purpose", response_class=HTMLResponse)
+def purpose_page(request: Request):
+    return templates.TemplateResponse(request, "purpose.html", {})
+
+
+@app.get("/api/zip/{zip5}")
+def api_zip(zip5: str):
+    """Display-only map data for a ZIP area (no model call, no address)."""
+    if not safety.ZIP_RE.match(zip5):
+        return JSONResponse({"error": "Please enter a valid 5-digit ZIP code."}, status_code=400)
+    return zipmap.zip_map(zip5)
 
 
 @app.get("/api/health")

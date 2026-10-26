@@ -48,6 +48,7 @@ CREATE TABLE sources (id TEXT PRIMARY KEY, name TEXT, url TEXT, retrieved TEXT, 
 CREATE TABLE zcta_cd (zcta TEXT, state TEXT, district TEXT, land_share REAL);
 CREATE TABLE zcta_sld (zcta TEXT, chamber TEXT, district TEXT, land_share REAL);
 CREATE TABLE zcta_place (zcta TEXT, place_geoid TEXT, place_name TEXT, land_share REAL);
+CREATE TABLE zcta_point (zcta TEXT PRIMARY KEY, lat REAL, lon REAL);  -- map display only
 CREATE TABLE officials (
   id TEXT PRIMARY KEY, name TEXT, role TEXT, level TEXT, state TEXT, district TEXT, chamber TEXT,
   party TEXT, phone TEXT, email TEXT, contact_url TEXT, website TEXT, address TEXT,
@@ -160,6 +161,15 @@ def load_zcta_place(con) -> int:
     return len(rows)
 
 
+def load_zcta_points(con) -> int:
+    """Census 2025 Gazetteer internal points (used only to center the ZIP map)."""
+    rows = []
+    for r in pipe_rows("gazetteer_2025_zcta_points.txt"):
+        rows.append((r["GEOID"], float(r["INTPTLAT"]), float(r["INTPTLONG"])))
+    con.executemany("INSERT INTO zcta_point VALUES (?,?,?)", rows)
+    return len(rows)
+
+
 def load_congress(con, today: str) -> int:
     data = json.loads((RAW / "legislators-current.json").read_text())
     src = "https://unitedstates.github.io/congress-legislators/legislators-current.json"
@@ -252,6 +262,11 @@ def main() -> None:
         "tab20_sldl202420_zcta520_st09.txt", load_zcta_sld(con), "House and Senate; CT only")
     src("census-zcta-place-ct", "U.S. Census Bureau 2020 ZCTA to Place relationship file (CT rows)",
         "tab20_zcta520_place20_natl.txt", load_zcta_place(con), "Used to detect New Haven coverage")
+    con.execute("INSERT INTO sources VALUES (?,?,?,?,?,?)",
+                ("census-gazetteer-zcta-2025", "U.S. Census Bureau 2025 Gazetteer, ZCTA internal points",
+                 "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_Gaz_zcta_national.zip",
+                 file_date(RAW / "gazetteer_2025_zcta_points.txt"), load_zcta_points(con),
+                 "Map centering only; boundaries are fetched live from Census TIGERweb when available"))
     leg_file = RAW / "legislators-current.json"
     n_cong = load_congress(con, file_date(leg_file))
     src("congress-legislators", "unitedstates/congress-legislators (current members)",

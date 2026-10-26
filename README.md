@@ -81,6 +81,8 @@ python scripts/benchmark.py              # live tokenomics benchmark (about $0.0
 | `app/agents.py` | The two agents (prompts and JSON schemas) |
 | `app/llm.py` | The only model client: gpt-6-luna via Portkey, token/cost logging, daily budget |
 | `app/geo.py`, `app/directory.py` | Deterministic geography and directory lookups (no LLM) |
+| `app/zipmap.py`, `app/static/zipmap.js` | Display-only ZIP-area map: Census 2025 Gazetteer center point + Census TIGERweb boundary, drawn with Leaflet on OpenStreetMap tiles. It never affects routing, uses no geolocation, sends only the ZIP code, and needs no key |
+| `app/templates/purpose.html` | OUR PURPOSE page (mission, commitments, nationwide roadmap) |
 | `app/safety.py` | Input hygiene, prompt-injection screen, letter checker |
 | `scripts/build_db.py` | Rebuilds `data/civic.db` from `data/raw/` (`--download` refreshes public datasets) |
 | `scripts/run_eval.py`, `scripts/benchmark.py` | Live evaluation and tokenomics |
