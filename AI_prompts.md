@@ -644,3 +644,15 @@ Please begin the final polish pass now, prioritize finishing before the deadline
 ## Prompt 10 — 2026-10-26
 
 I approve the narrative and design. Commit, merge into main without force-pushing, push, and verify the published files match local.
+
+---
+
+## Prompt 11 — 2026-10-26
+
+wait can you take my name off the website since it is publci
+
+---
+
+## Prompt 12 — 2026-10-26
+
+Yes, commit and push the name removal to main (normal push) and verify it's published.
