@@ -1,0 +1,69 @@
+lookup timing ...
+{'zip_lookup_local_sqlite_ms': 0.02, 'address_geocode_live_ms': 791.3, 'address_geocode_cached_ms': 0.44, 'address_method': 'address', 'address_districts': {'cd': ['CT-3'], 'ct_house': ['96'], 'ct_senate': ['11']}}
+baseline (cold) ...
+  baseline_cold   NH-1   PASS nhv-livable-city-initiative
+  baseline_cold   NH-2   PASS nhv-public-works
+  baseline_cold   NH-3   PASS nhv-fair-rent-commission
+  baseline_cold   NH-4   PASS nhv-health-department
+  baseline_cold   NH-5   FAIL ct-csde
+  baseline_cold   CT-1   PASS ct-dss
+  baseline_cold   CT-2   PASS ct-oha
+  baseline_cold   CT-3   PASS ct-deep
+  baseline_cold   CT-4   PASS ct-dol
+  baseline_cold   CT-5   PASS ct-chro
+  baseline_cold   US-1   PASS us-ssa
+  baseline_cold   US-2   PASS us-va
+  baseline_cold   US-3   PASS us-cms-medicare
+  baseline_cold   US-4   PASS us-dot-nhtsa
+  baseline_cold   LC-1   PASS dir-usagov-local
+  baseline_cold   LC-2   PASS dir-usagov-state
+  baseline_cold   AMB-1  PASS ct-cga-find-legislator
+  baseline_cold   SAFE-1 PASS nhv-livable-city-initiative
+optimized (cold) ...
+  optimized_cold  NH-1   PASS nhv-livable-city-initiative
+  optimized_cold  NH-2   PASS nhv-public-works
+  optimized_cold  NH-3   PASS nhv-fair-rent-commission
+  optimized_cold  NH-4   PASS nhv-health-department
+  optimized_cold  NH-5   FAIL ct-csde
+  optimized_cold  CT-1   PASS ct-dss
+  optimized_cold  CT-2   PASS ct-oha
+  optimized_cold  CT-3   PASS ct-deep
+  optimized_cold  CT-4   PASS ct-dol
+  optimized_cold  CT-5   FAIL us-hud-fheo
+  optimized_cold  US-1   PASS us-ssa
+  optimized_cold  US-2   FAIL us-N000002
+  optimized_cold  US-3   PASS us-cms-medicare
+  optimized_cold  US-4   PASS us-dot-nhtsa
+  optimized_cold  LC-1   PASS dir-usagov-local
+  optimized_cold  LC-2   PASS dir-usagov-state
+  optimized_cold  AMB-1  PASS ct-cga-find-legislator
+  optimized_cold  SAFE-1 PASS nhv-livable-city-initiative
+optimized warm-up pass (not reported) ...
+optimized (warm) ...
+  optimized_warm  NH-1   PASS nhv-livable-city-initiative
+  optimized_warm  NH-2   PASS nhv-public-works
+  optimized_warm  NH-3   PASS nhv-fair-rent-commission
+  optimized_warm  NH-4   PASS nhv-health-department
+  optimized_warm  NH-5   FAIL ct-csde
+  optimized_warm  CT-1   PASS ct-dss
+  optimized_warm  CT-2   PASS ct-oha
+  optimized_warm  CT-3   PASS ct-deep
+  optimized_warm  CT-4   PASS ct-dol
+  optimized_warm  CT-5   FAIL us-hud-fheo
+  optimized_warm  US-1   PASS us-ssa
+  optimized_warm  US-2   PASS us-va
+  optimized_warm  US-3   PASS us-cms-medicare
+  optimized_warm  US-4   PASS us-dot-nhtsa
+  optimized_warm  LC-1   PASS dir-usagov-local
+  optimized_warm  LC-2   PASS dir-usagov-state
+  optimized_warm  AMB-1  PASS ct-cga-find-legislator
+  optimized_warm  SAFE-1 PASS nhv-livable-city-initiative
+# Tokenomics benchmark (2026-10-26T00:28:55, gpt-6-luna)
+
+| Condition | Routing pass | Avg candidates | Routing in / cached / out tokens | Routing $/call | Routing latency | Letter in / out | Letter $/call |
+|---|---|---|---|---|---|---|---|
+| baseline_cold | 17/18 | 53.1 | 12683.2 / 0 / 239.2 | $0.001705 | 4.6 s | 461.7 / 421.7 | $0.000257 |
+| optimized_cold | 15/18 | 12.8 | 1279.4 / 0 / 158.5 | $0.000239 | 2.8 s | 461.2 / 233.2 | $0.000163 |
+| optimized_warm | 16/18 | 12.8 | 1268.6 / 1265.6 / 147.1 | $0.000087 | 2.56 s | 453 / 224.8 | $0.000158 |
+
+Lookups: {"zip_lookup_local_sqlite_ms": 0.02, "address_geocode_live_ms": 791.3, "address_geocode_cached_ms": 0.44, "address_method": "address", "address_districts": {"cd": ["CT-3"], "ct_house": ["96"], "ct_senate": ["11"]}}

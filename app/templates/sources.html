@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Sources & coverage · Civic Compass{% endblock %}
+{% block content %}
+<section class="hero slim">
+  <h1>Sources &amp; coverage</h1>
+  <p class="lede">Every office and official Civic Compass can recommend comes from the records below. The AI chooses only among these records; it never writes contact details itself.
+  If something is missing or out of date, the app says so and links to an official directory.</p>
+</section>
+
+<section class="card">
+  <h2>Datasets</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Dataset</th><th>Records</th><th>Retrieved</th><th>Notes</th></tr></thead>
+    <tbody>
+    {% for s in sources %}
+      <tr><td>{% if s.url and s.url.startswith('http') %}<a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</td>
+        <td class="num">{{ s.records }}</td><td>{{ s.retrieved }}</td><td>{{ s.notes }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="fineprint">Coverage limits: elected-official data reflects members serving on the retrieval date (the November 3, 2026 election may change seats).
+    A ZIP code can cross district lines; when it does, Civic Compass lists every possible official and asks for a street address instead of guessing.</p>
+</section>
+
+<section class="card">
+  <h2>Verified agency directory ({{ agencies|length }} offices)</h2>
+  <div class="table-wrap">
+  <table class="dir">
+    <thead><tr><th>Office</th><th>Level</th><th>Issues</th><th>Contact</th><th>Source</th></tr></thead>
+    <tbody>
+    {% for a in agencies %}
+      <tr>
+        <td><strong>{{ a.name }}</strong><br><span class="muted">{{ a.handles }}</span></td>
+        <td><span class="badge lvl-{{ a.level }}">{{ a.level }}</span><br><span class="muted">{{ a.jurisdiction }}</span></td>
+        <td>{{ a.categories.replace(',', ', ') }}</td>
+        <td>{% if a.phone %}{{ a.phone }}<br>{% endif %}{% if a.email %}{{ a.email }}<br>{% endif %}{% if a.contact_url %}<a href="{{ a.contact_url }}" target="_blank" rel="noopener">contact page</a>{% endif %}</td>
+        <td><a href="{{ a.source_url }}" target="_blank" rel="noopener">official page</a><br><span class="muted">checked {{ a.date_checked }}{% if a.snapshot_url %} · <a href="{{ a.snapshot_url }}" target="_blank" rel="noopener">archived copy</a>{% endif %}</span></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dir-usagov-local",
+    "name": "USAGov directory of local governments (limited-coverage fallback)",
+    "level": "municipal",
+    "jurisdiction": "Directory",
+    "categories": ["housing", "health", "education", "transportation", "environment", "benefits", "other"],
+    "handles": "Official federal directory that links to contact information for local governments by state; Civic Compass has no verified city-department records for this location.",
+    "phone": null,
+    "email": null,
+    "contact_url": "https://www.usa.gov/state-local-governments",
+    "complaint_process": "Use the directory to find your city or county government, then look for its code-enforcement, health, or public-works contact.",
+    "address": null,
+    "source_url": "https://www.usa.gov/state-local-governments",
+    "date_checked": "2026-10-26",
+    "evidence": "Find contact information for local governments by state."
+  },
+  {
+    "id": "dir-usagov-state",
+    "name": "USAGov directory of state governments and agencies (limited-coverage fallback)",
+    "level": "state",
+    "jurisdiction": "Directory",
+    "categories": ["housing", "health", "education", "transportation", "environment", "benefits", "other"],
+    "handles": "Official federal directory that links to state governments, governors, and state agencies such as consumer protection, social services, and health; Civic Compass has no verified state-agency records outside Connecticut.",
+    "phone": null,
+    "email": null,
+    "contact_url": "https://www.usa.gov/state-local-governments",
+    "complaint_process": "Choose your state in the directory, then the agency that matches your issue.",
+    "address": null,
+    "source_url": "https://www.usa.gov/state-local-governments",
+    "date_checked": "2026-10-26",
+    "evidence": "contact information for state governments, governors, elected officials"
+  },
+  {
+    "id": "dir-plural-find-legislator",
+    "name": "Plural (Open States) Find Your Legislator tool (limited-coverage fallback)",
+    "level": "state",
+    "jurisdiction": "Directory",
+    "categories": ["housing", "health", "education", "transportation", "environment", "benefits", "other"],
+    "handles": "Free tool that finds a resident's state legislators by location; used because Civic Compass verifies state legislators only for Connecticut.",
+    "phone": null,
+    "email": null,
+    "contact_url": "https://pluralpolicy.com/find-your-legislator",
+    "complaint_process": null,
+    "address": null,
+    "source_url": "https://pluralpolicy.com/find-your-legislator",
+    "date_checked": "2026-10-26",
+    "evidence": "Find your Local Legislator"
+  }
+]

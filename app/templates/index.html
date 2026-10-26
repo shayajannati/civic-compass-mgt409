@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Who in government can actually fix this?</h1>
+  <p class="lede">Describe your problem in plain words. Civic Compass works out whether it belongs to your city, your state or the federal government,
+    shows you the responsible office with <strong>verified, sourced contact details</strong>, explains why, and drafts a letter you can edit and send yourself.</p>
+  <ol class="steps" aria-label="How it works">
+    <li><span>1</span> Describe your concern</li>
+    <li><span>2</span> See the right office &amp; why</li>
+    <li><span>3</span> Review your letter</li>
+  </ol>
+  <p class="coverage-note"><strong>Pilot coverage:</strong> federal offices and members of Congress nationwide · all Connecticut state legislators and key state agencies ·
+    deepest city coverage for <strong>New Haven, CT</strong>. Elsewhere we show what we can verify and link to official directories.</p>
+</section>
+
+{% if not env.key_configured %}
+<div class="alert alert-setup" role="alert">
+  <strong>Setup needed:</strong> the AI model key (PORTKEY_API_KEY) was not found. Put a <code>.env</code> file containing
+  <code>PORTKEY_API_KEY=...</code> in the project folder or the folder directly above it, then restart the app. Directory lookups still work.
+</div>
+{% endif %}
+
+<div class="layout">
+  <section class="card form-card" aria-labelledby="form-title">
+    <h2 id="form-title">1 · Your concern</h2>
+    <form id="issue-form" novalidate>
+      <div class="row two">
+        <label>Your name <span class="opt">(for the letter signature)</span>
+          <input name="name" autocomplete="name" maxlength="80" placeholder="e.g. Jordan Rivera">
+        </label>
+        <label>ZIP code <span class="req">*</span>
+          <input name="zip" inputmode="numeric" pattern="\d{5}" maxlength="5" required placeholder="06511" autocomplete="postal-code">
+        </label>
+      </div>
+      <label>Issue category <span class="req">*</span>
+        <select name="category" required>
+          <option value="">Choose one…</option>
+          {% for key, label in categories.items() %}<option value="{{ key }}">{{ label }}</option>{% endfor %}
+        </select>
+      </label>
+      <label>What is happening? <span class="req">*</span>
+        <textarea name="description" rows="5" maxlength="2000" required
+          placeholder="e.g. My landlord has not fixed the heat in my apartment for two weeks despite three written requests."></textarea>
+        <span class="counter" data-for="description">0 / 2000</span>
+      </label>
+      <label>What outcome do you want? <span class="req">*</span>
+        <textarea name="outcome" rows="2" maxlength="600" required placeholder="e.g. An inspection and the heat repaired."></textarea>
+      </label>
+      <details class="more">
+        <summary>Add more detail (optional)</summary>
+        <label>Street address <span class="opt">(only to pin down your exact districts; sent once to the U.S. Census Geocoder, never stored)</span>
+          <input name="street" maxlength="120" autocomplete="street-address" placeholder="e.g. 165 Church St">
+        </label>
+        <label>Anything else we should know?
+          <textarea name="extra" rows="2" maxlength="1000" placeholder="Dates, who you already contacted, reference numbers…"></textarea>
+        </label>
+      </details>
+      <p class="fineprint">Please don't include Social Security numbers, medical record numbers or passwords.</p>
+      <button class="btn primary" type="submit" id="route-btn">Find the right office</button>
+      <div class="form-error" role="alert" aria-live="assertive"></div>
+    </form>
+  </section>
+
+  <section class="results" aria-live="polite" aria-busy="false" id="results">
+    <div class="placeholder card">
+      <svg viewBox="0 0 120 120" aria-hidden="true" class="ph-compass"><circle cx="60" cy="60" r="52" fill="none" stroke="#c9d8cf" stroke-width="4"/><path d="M60 18l14 42-14 42-14-42z" fill="#e9e2cf"/><path d="M60 18l14 42H46z" fill="#3c9a70"/></svg>
+      <h2>2 · Your route will appear here</h2>
+      <p>Try an example:</p>
+      <div class="examples">
+        <button class="chip" type="button" data-example="heat">No heat — New Haven</button>
+        <button class="chip" type="button" data-example="ssa">Social Security delay</button>
+        <button class="chip" type="button" data-example="pothole">Dangerous pothole</button>
+        <button class="chip" type="button" data-example="school">Special-education services</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<template id="tpl-loading">
+  <div class="card loading"><div class="spinner" aria-hidden="true"></div><p class="loading-text">Looking up your districts…</p></div>
+</template>
+{% endblock %}
+{% block scripts %}<script src="/static/app.js" defer></script>{% endblock %}

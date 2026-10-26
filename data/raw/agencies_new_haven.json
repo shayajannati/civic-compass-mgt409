@@ -1,0 +1,369 @@
+[
+  {
+    "id": "nhv-public-schools-central-office",
+    "name": "New Haven Public Schools - Main Office",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "education"
+    ],
+    "handles": "The main district office of New Haven Public Schools, reachable by phone at its Meadow Street headquarters.",
+    "phone": "(475) 220-1000",
+    "email": null,
+    "contact_url": "https://www.nhps.net/page/contact-us",
+    "complaint_process": null,
+    "address": "54 Meadow Street, New Haven, CT 06519",
+    "source_url": "https://www.nhps.net/page/contact-us",
+    "date_checked": "2026-10-26",
+    "evidence": "NHPS Main Office Contact 54 Meadow Street New Haven, CT 06519",
+    "verified_via": "Live official page",
+    "snapshot_url": null
+  },
+  {
+    "id": "nhv-public-schools-youth-family-community",
+    "name": "New Haven Public Schools - Office of Youth, Family & Community Engagement",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "education"
+    ],
+    "handles": "NHPS office for family and community engagement, including attendance support, Family Resource Centers, and resources for NHPS families.",
+    "phone": "475-220-1900",
+    "email": null,
+    "contact_url": "https://www.nhps.net/page/office-of-youth-family-community",
+    "complaint_process": null,
+    "address": null,
+    "source_url": "https://www.nhps.net/page/office-of-youth-family-community",
+    "date_checked": "2026-10-26",
+    "evidence": "The FRCs also serve as key entry points for parent engagement",
+    "verified_via": "Live official page",
+    "snapshot_url": null
+  },
+  {
+    "id": "nhv-livable-city-initiative",
+    "name": "Livable City Initiative (LCI)",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "housing"
+    ],
+    "handles": "New Haven's primary housing enforcement agency, covering housing code enforcement, anti-blight, and residential landlord licensing.",
+    "phone": "203-946-7090",
+    "email": "lbrennan@newhavenct.gov",
+    "contact_url": "https://lci.city/complaint/housing_code",
+    "complaint_process": "Make a housing code complaint (or anti-blight complaint) online via the links on the LCI page.",
+    "address": "165 Church St, 6th Floor, New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/livable-city-initiative",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] serves as New Haven's primary housing enforcement agency",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173801/https://www.newhavenct.gov/government/departments-divisions/livable-city-initiative"
+  },
+  {
+    "id": "nhv-fair-rent-commission",
+    "name": "Fair Rent Commission",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "housing"
+    ],
+    "handles": "Determines whether residential rent is so excessive as to be harsh and unconscionable, and hears tenant complaints about rent increases, added utility charges, and unremedied code violations.",
+    "phone": "203-946-4930",
+    "email": "fairrent@newhavenct.gov",
+    "contact_url": "https://p.veoci.com/NewHavenFairRent",
+    "complaint_process": "File using the official online complaint form (email alone is not a complaint); filing by phone or at the office is also listed.",
+    "address": "165 Church St., 1st Floor, New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/fair-rent-commission",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-06-16] established to control and eliminate excessive rental charges on residential housing",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260616090625/https://www.newhavenct.gov/government/departments-divisions/fair-rent-commission"
+  },
+  {
+    "id": "nhv-health-department",
+    "name": "New Haven Health Department (NHV Health)",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "health",
+      "environment"
+    ],
+    "handles": "City public health department covering environmental health, lead poisoning prevention, food and salon inspections, clinics, and vital records.",
+    "phone": "203-946-6999",
+    "email": null,
+    "contact_url": "https://nhvhealth.org/staff-directory/",
+    "complaint_process": "Use the 'Make a Complaint' link on nhvhealth.org, which leads to the staff directory.",
+    "address": "424 Chapel St, New Haven, CT 06511",
+    "source_url": "https://nhvhealth.org/",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] We work with families, homeowners, landlords and contractors to help make your home safe",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814174009/https://nhvhealth.org/"
+  },
+  {
+    "id": "nhv-seeclickfix",
+    "name": "SeeClickFix (City of New Haven non-emergency issue reporting)",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "transportation",
+      "environment",
+      "other"
+    ],
+    "handles": "The City's online tool for reporting non-emergency problems such as potholes, graffiti, and noise complaints.",
+    "phone": null,
+    "email": null,
+    "contact_url": "https://seeclickfix.com/web_portal/WAE8vSooYm9Yc9YRgEETwygF/report/category",
+    "complaint_process": "Report the problem online through See, Click, Fix.",
+    "address": null,
+    "source_url": "https://www.newhavenct.gov/",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-10-17] Potholes, Graffiti, Noise Complaints, report them here with - See, Click, Fix!",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20261017135259/https://www.newhavenct.gov/"
+  },
+  {
+    "id": "nhv-public-works",
+    "name": "Department of Public Works",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "transportation",
+      "environment"
+    ],
+    "handles": "Maintains streets and the right-of-way, collects trash and recycling, operates city bridges, and enforces sidewalk, refuse, and snow-removal ordinances.",
+    "phone": "(203) 946-7700",
+    "email": null,
+    "contact_url": "https://seeclickfix.com/web_portal/WAE8vSooYm9Yc9YRgEETwygF/report/category",
+    "complaint_process": "Report Public Works issues on SeeClickFix or call (203) 946-7700.",
+    "address": "424 Chapel St, Suite 170, New Haven, CT 06511",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/public-works-department",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] Providing efficient collection of household waste including mixed solid waste, single-stream recyclables",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173822/https://www.newhavenct.gov/government/departments-divisions/public-works-department"
+  },
+  {
+    "id": "nhv-transportation-traffic-parking",
+    "name": "Transportation, Traffic & Parking",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "transportation"
+    ],
+    "handles": "Handles traffic control, signs, traffic signals, street lamps, parking operations and enforcement, crossing guards, and transportation planning.",
+    "phone": "(203) 946-8075",
+    "email": "HSimpson@newhavenct.gov",
+    "contact_url": "https://seeclickfix.com/web_portal/WAE8vSooYm9Yc9YRgEETwygF/report/category",
+    "complaint_process": "Submit sign, signal, street lamp, or parking enforcement requests on SeeClickFix, or leave a voicemail at (203) 946-8075.",
+    "address": "200 Orange St. G3, New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/transportation-traffic-parking",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-09-27] organized in four groups: Traffic Control, Parking Operations, Safety Guards and Transportation Planning",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260927192947/https://www.newhavenct.gov/government/departments-divisions/transportation-traffic-parking"
+  },
+  {
+    "id": "nhv-engineering",
+    "name": "Engineering Department",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "transportation"
+    ],
+    "handles": "Designs and builds city infrastructure including bridges, roads, sidewalks, drainage, coastal protection, and street lighting upgrades.",
+    "phone": "203-946-6417",
+    "email": "gzinn@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/departments-divisions/engineering",
+    "complaint_process": null,
+    "address": "200 Orange St. 5th Floor, New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/engineering",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] bridges, roads, sidewalks, drainage systems, coastal protection, street lighting capital upgrades",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814174009/https://www.newhavenct.gov/government/departments-divisions/engineering"
+  },
+  {
+    "id": "nhv-board-of-alders",
+    "name": "Board of Alders",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "other"
+    ],
+    "handles": "The City's legislative body, which creates and amends local laws and approves the annual budget; residents can look up their alder by ward.",
+    "phone": "(203) 946-8371",
+    "email": "alucas@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/departments-divisions/board-of-alders/find-your-alder-ward-map",
+    "complaint_process": null,
+    "address": "165 Church St., New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/board-of-alders",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] The Board of Alders is the legislative body for the City of New Haven.",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173835/https://www.newhavenct.gov/government/departments-divisions/board-of-alders"
+  },
+  {
+    "id": "nhv-office-of-the-mayor",
+    "name": "Office of the Mayor",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "other"
+    ],
+    "handles": "Office of New Haven's mayor; the page offers meeting, event-attendance, and proclamation requests.",
+    "phone": "(203) 946-8200",
+    "email": "MayorElicker@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/office-of-the-mayor",
+    "complaint_process": null,
+    "address": "165 Church St., New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/office-of-the-mayor",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-06-18] Justin Elicker is the 51st elected Mayor of New Haven",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260618075545/https://www.newhavenct.gov/government/office-of-the-mayor"
+  },
+  {
+    "id": "nhv-elderly-services",
+    "name": "Department of Elderly Services",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "benefits",
+      "health"
+    ],
+    "handles": "Supports residents aged 55 and older with access to resources, runs three senior centers, and promotes programs such as the Renter's Rebate.",
+    "phone": "203-946-8550",
+    "email": "tveale@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/departments-divisions/elderly-services",
+    "complaint_process": null,
+    "address": "165 Church Street, 1st Floor Atrium, New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/elderly-services",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] empower New Haven residents aged 55 and older to live independently with dignity",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173903/https://www.newhavenct.gov/government/departments-divisions/elderly-services"
+  },
+  {
+    "id": "nhv-community-services-administration",
+    "name": "Community Services Administration (CSA)",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "benefits",
+      "health"
+    ],
+    "handles": "Umbrella administration for health and social well-being, covering Health, Youth and Recreation, Community Resilience, Elderly Services, and Libraries.",
+    "phone": "203-946-7907",
+    "email": "EHalsey@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/departments-divisions/community-services-administration",
+    "complaint_process": null,
+    "address": "165 Church St., 2nd Floor, New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/community-services-administration",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] committed to addressing the health & social well-being of all New Haven residents",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173816/https://www.newhavenct.gov/government/departments-divisions/community-services-administration"
+  },
+  {
+    "id": "nhv-building-inspection-enforcement",
+    "name": "Office of Building Inspection & Enforcement",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "housing"
+    ],
+    "handles": "Administers building permits for residential and non-residential construction under state and local building codes.",
+    "phone": "(203) 946-8045",
+    "email": "RDillon@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/departments-divisions/office-of-building-inspection-enforcement",
+    "complaint_process": null,
+    "address": "200 Orange St, Room 501, New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/office-of-building-inspection-enforcement",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] We administer the permits for residential and non-residential construction within the community.",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173801/https://www.newhavenct.gov/government/departments-divisions/office-of-building-inspection-enforcement"
+  },
+  {
+    "id": "nhv-city-plan",
+    "name": "City Plan Department",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "housing",
+      "other"
+    ],
+    "handles": "Regulates land use and zoning through the City Plan Commission, Board of Zoning Appeals, and Historic District Commission.",
+    "phone": "(203) 946-6379",
+    "email": "lebrown@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/departments-divisions/city-plan",
+    "complaint_process": null,
+    "address": "165 Church St., 5th Floor, New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/city-plan",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] City Plan is the regulatory body for land use development in the city",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173831/https://www.newhavenct.gov/government/departments-divisions/city-plan"
+  },
+  {
+    "id": "nhv-climate-sustainability",
+    "name": "Office of Climate and Sustainability",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "environment"
+    ],
+    "handles": "Coordinates city-wide climate and environmental sustainability policies and initiatives, including recycling education.",
+    "phone": "(475) 331-3769",
+    "email": "swinter@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/departments-divisions/office-of-climate-and-sustainability",
+    "complaint_process": null,
+    "address": null,
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/office-of-climate-and-sustainability",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] advance and coordinate city-wide climate and environmental sustainability policies, practices, and initiatives",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173801/https://www.newhavenct.gov/government/departments-divisions/office-of-climate-and-sustainability"
+  },
+  {
+    "id": "nhv-commission-on-equal-opportunities",
+    "name": "Commission on Equal Opportunities",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "other"
+    ],
+    "handles": "Receives, investigates, and mediates discrimination complaints and oversees contractor non-discrimination compliance.",
+    "phone": "203-946-8160",
+    "email": "NJeffers@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/departments-divisions/commission-on-equal-opportunities",
+    "complaint_process": null,
+    "address": "200 Orange St., 4th Floor, New Haven, CT 06511",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/commission-on-equal-opportunities",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] The Commission is to receive, initiate, investigate and mediate discriminatory practice complaints.",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173808/https://www.newhavenct.gov/government/departments-divisions/commission-on-equal-opportunities"
+  },
+  {
+    "id": "nhv-disability-services",
+    "name": "Department of Services for Persons with Disabilities",
+    "level": "municipal",
+    "jurisdiction": "New Haven, CT",
+    "categories": [
+      "other"
+    ],
+    "handles": "Ensures residents and visitors with disabilities have equal access to City programs, and handles accommodation requests and ADA grievances.",
+    "phone": "203-946-7651",
+    "email": "GKnauff@newhavenct.gov",
+    "contact_url": "https://www.newhavenct.gov/government/departments-divisions/disability-services",
+    "complaint_process": "Use the ADA Grievance/Complaint Form or 'Report an Accessibility Issue' link on the page, or contact the department.",
+    "address": "165 Church St., New Haven, CT 06510",
+    "source_url": "https://www.newhavenct.gov/government/departments-divisions/disability-services",
+    "date_checked": "2026-10-26",
+    "evidence": "[snapshot 2026-08-14] residents and visitors with disabilities have equal access to the City's programs, services and activities",
+    "verified_via": "Internet Archive snapshot of official page",
+    "snapshot_url": "https://web.archive.org/web/20260814173826/https://www.newhavenct.gov/government/departments-divisions/disability-services"
+  }
+]

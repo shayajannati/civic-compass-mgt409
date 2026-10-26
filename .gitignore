@@ -1,0 +1,20 @@
+# secrets — never commit a real .env (the template .env.example IS committed)
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# runtime logs (token usage log is regenerated; evidence copies live in evidence/)
+data/usage_log.jsonl
+data/*.tmp
+
+# local tooling
+.claude/
+.DS_Store
+*.log

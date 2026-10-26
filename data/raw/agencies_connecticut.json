@@ -1,0 +1,246 @@
+[
+  {
+    "id": "ct-doh",
+    "name": "Connecticut Department of Housing",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "housing"
+    ],
+    "handles": "Finances housing construction and infrastructure and assists residents and municipalities with housing subsidies, including rental assistance programs.",
+    "phone": "860-270-8262",
+    "email": null,
+    "contact_url": "https://portal.ct.gov/doh/doh-1/main/contact-us",
+    "complaint_process": "Contact DOH by phone for its housing programs; for a housing crisis, the department directs residents to call 211.",
+    "address": "505 Hudson Street, Hartford, CT 06106-7106",
+    "source_url": "https://portal.ct.gov/doh",
+    "date_checked": "2026-10-26",
+    "evidence": "DOH supports Connecticut residents by financing housing construction and infrastructure."
+  },
+  {
+    "id": "ct-chro",
+    "name": "Connecticut Commission on Human Rights and Opportunities (CHRO)",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "housing",
+      "other"
+    ],
+    "handles": "Enforces Connecticut civil and human rights laws and takes discrimination complaints in employment, housing, public accommodations, and credit.",
+    "phone": "800-477-5737",
+    "email": null,
+    "contact_url": "https://portal.ct.gov/chro/about-us/contact-offices",
+    "complaint_process": "File a notarized complaint with a CHRO regional office or schedule an intake appointment, within 300 days of the discriminatory act.",
+    "address": "450 Columbus Boulevard, Suite 2, Hartford, CT 06103-1835",
+    "source_url": "https://portal.ct.gov/chro/file-complaint",
+    "date_checked": "2026-10-26",
+    "evidence": "injustices in employment, housing, places of public accommodations, or in credit transactions"
+  },
+  {
+    "id": "ct-dph",
+    "name": "Connecticut Department of Public Health (DPH)",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "health"
+    ],
+    "handles": "Oversees public health and licenses healthcare facilities, taking complaints about care in licensed healthcare facilities.",
+    "phone": "860-509-8000",
+    "email": "ask.dph@ct.gov",
+    "contact_url": "https://portal.ct.gov/dph/Facility-Licensing--Investigations/Facility-Licensing--Investigations-Section-FLIS/FLIS-Complaint-Submission",
+    "complaint_process": "Submit a facility care complaint through the DPH Facility Licensing and Investigations Section online form at dphflisevents.ct.gov/Complaints.",
+    "address": "410 Capitol Avenue, Hartford, CT 06134",
+    "source_url": "https://portal.ct.gov/dph",
+    "date_checked": "2026-10-26",
+    "evidence": "The Department of Public Health (DPH) supports CT providers and individuals."
+  },
+  {
+    "id": "ct-oha",
+    "name": "Connecticut Office of the Healthcare Advocate (OHA)",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "health"
+    ],
+    "handles": "Provides free help to consumers understanding their health benefits and advocates for them when benefits are denied.",
+    "phone": "866-466-4446",
+    "email": "Healthcare.Advocate@ct.gov",
+    "contact_url": "https://portal.ct.gov/oha/contact-oha",
+    "complaint_process": "Request help through the OHA online inquiry form, by email, or by phone; an advocate responds within 1-2 business days.",
+    "address": null,
+    "source_url": "https://portal.ct.gov/oha",
+    "date_checked": "2026-10-26",
+    "evidence": "advocates for consumers when their benefits are denied"
+  },
+  {
+    "id": "ct-insurance-dept",
+    "name": "Connecticut Insurance Department",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "health",
+      "other"
+    ],
+    "handles": "Makes sure insurance companies follow state law and treat consumers fairly, and accepts consumer insurance complaints.",
+    "phone": "860-297-3900",
+    "email": "insurance@ct.gov",
+    "contact_url": "https://portal.ct.gov/cid/file-a-complaint",
+    "complaint_process": "File an insurance complaint through the Department's online complaint page or call Consumer Affairs.",
+    "address": "280 Trumbull Street, Floor 7, Hartford, CT 06103",
+    "source_url": "https://portal.ct.gov/cid",
+    "date_checked": "2026-10-26",
+    "evidence": "making sure that insurance companies follow the state's laws and treat you fairly"
+  },
+  {
+    "id": "ct-dss",
+    "name": "Connecticut Department of Social Services (DSS)",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "benefits",
+      "health"
+    ],
+    "handles": "Administers benefits including SNAP food assistance, HUSKY (Medicaid) health coverage, and cash help.",
+    "phone": "1-855-626-6632",
+    "email": null,
+    "contact_url": "https://portal.ct.gov/dss/about-the-department-of-social-services/contact",
+    "complaint_process": "Apply for or renew benefits online through MyAccount at connect.ct.gov, or call the Benefits Center.",
+    "address": "55 Farmington Ave., Hartford, CT 06105",
+    "source_url": "https://portal.ct.gov/dss/about-the-department-of-social-services/contact",
+    "date_checked": "2026-10-26",
+    "evidence": "renew, and apply for benefits"
+  },
+  {
+    "id": "ct-csde",
+    "name": "Connecticut State Department of Education (CSDE)",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "education"
+    ],
+    "handles": "Serves as the administrative arm of the State Board of Education, including the Bureau of Special Education and its due process unit.",
+    "phone": "860-713-6543",
+    "email": null,
+    "contact_url": "https://portal.ct.gov/sde/special-education/special-education-legal-and-due-process/contact",
+    "complaint_process": "Special education complaints go to the Bureau of Special Education Due Process Unit (Dueprocess.sde@ct.gov, 860-713-6966).",
+    "address": "450 Columbus Boulevard, Hartford, CT 06103",
+    "source_url": "https://portal.ct.gov/sde",
+    "date_checked": "2026-10-26",
+    "evidence": "the administrative arm of the Connecticut State Board of Education"
+  },
+  {
+    "id": "ct-dot",
+    "name": "Connecticut Department of Transportation (CTDOT)",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "transportation"
+    ],
+    "handles": "Is responsible for Connecticut's major transportation systems and takes reports of problems on state roads.",
+    "phone": "860-594-2560",
+    "email": null,
+    "contact_url": "https://customercare.dot.ct.gov/",
+    "complaint_process": "Report a problem on a state road through the CTDOT online customer care webform or by phone.",
+    "address": "2800 Berlin Turnpike, P.O. Box 317546, Newington, CT 06131-7546",
+    "source_url": "https://portal.ct.gov/dot",
+    "date_checked": "2026-10-26",
+    "evidence": "We're responsible for Connecticut's major transportation systems"
+  },
+  {
+    "id": "ct-deep",
+    "name": "Connecticut Department of Energy and Environmental Protection (DEEP)",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "environment"
+    ],
+    "handles": "Conserves and protects the state's natural resources and environment and takes reports of pollution and environmental problems.",
+    "phone": "860-424-3000",
+    "email": null,
+    "contact_url": "https://portal.ct.gov/deep/about/reporting-environmental-problems",
+    "complaint_process": "Report environmental emergencies 24 hours a day at 866-337-7745; use DEEP's topic-specific online complaint forms for other pollution concerns.",
+    "address": "79 Elm Street, Hartford, CT 06106-5127",
+    "source_url": "https://portal.ct.gov/deep",
+    "date_checked": "2026-10-26",
+    "evidence": "dedicated to conserving, improving, and protecting our natural resources and the environment"
+  },
+  {
+    "id": "ct-attorney-general",
+    "name": "Connecticut Office of the Attorney General",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "other"
+    ],
+    "handles": "Accepts consumer complaints and may provide informal mediation to help consumers resolve issues with businesses.",
+    "phone": "860-808-5318",
+    "email": null,
+    "contact_url": "https://portal.ct.gov/ag/common/complaint-form-landing-page",
+    "complaint_process": "File an electronic complaint at www.dir.ct.gov/ag/complaint/; PDF forms are available in other languages.",
+    "address": "165 Capitol Avenue, Hartford, CT 06106",
+    "source_url": "https://portal.ct.gov/ag",
+    "date_checked": "2026-10-26",
+    "evidence": "File an electronic complaint with the Office of the Attorney General."
+  },
+  {
+    "id": "ct-dcp",
+    "name": "Connecticut Department of Consumer Protection (DCP)",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "housing",
+      "other"
+    ],
+    "handles": "Protects consumers from fraud and unfair business practices and takes complaints about businesses, including home improvement contractors.",
+    "phone": "860-713-6300",
+    "email": "DCP.complaints@ct.gov",
+    "contact_url": "https://portal.ct.gov/dcp/contact",
+    "complaint_process": "Submit a complaint to DCP online or by mail, email, or fax, with copies of receipts and paperwork.",
+    "address": "450 Columbus Blvd., Suite 901, Hartford, CT 06103",
+    "source_url": "https://portal.ct.gov/dcp",
+    "date_checked": "2026-10-26",
+    "evidence": "protect Connecticut citizens from fraud, unfair business practices"
+  },
+  {
+    "id": "ct-dol",
+    "name": "Connecticut Department of Labor (CTDOL)",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "benefits"
+    ],
+    "handles": "Runs the state unemployment insurance program through the ReEmployCT system, including new claims, weekly certifications, and appeals.",
+    "phone": "800-956-3294",
+    "email": null,
+    "contact_url": "https://portal.ct.gov/dol/contact-dol",
+    "complaint_process": "File a new unemployment claim and weekly certifications online through ReEmployCT, or submit a case online.",
+    "address": "200 Folly Brook Blvd., Wethersfield, CT 06109",
+    "source_url": "https://portal.ct.gov/dol/unemployment-benefits",
+    "date_checked": "2026-10-26",
+    "evidence": "File your first claim to begin receiving benefits"
+  },
+  {
+    "id": "ct-cga-find-legislator",
+    "name": "Connecticut General Assembly - Find Your Legislators",
+    "level": "state",
+    "jurisdiction": "Connecticut",
+    "categories": [
+      "housing",
+      "health",
+      "education",
+      "transportation",
+      "environment",
+      "benefits",
+      "other"
+    ],
+    "handles": "Lets residents look up their state legislators by town and street address.",
+    "phone": null,
+    "email": null,
+    "contact_url": "https://www.cga.ct.gov/asp/menu/cgafindleg.asp",
+    "complaint_process": null,
+    "address": "Legislative Office Building, 300 Capitol Avenue, Hartford, CT 06106",
+    "source_url": "https://www.cga.ct.gov/asp/menu/cgafindleg.asp",
+    "date_checked": "2026-10-26",
+    "evidence": "Find Your Legislators"
+  }
+]

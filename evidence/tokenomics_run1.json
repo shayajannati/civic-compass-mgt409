@@ -1,0 +1,1337 @@
+{
+ "run_at": "2026-10-26T00:28:55",
+ "model": "gpt-6-luna",
+ "prices_per_1M": {
+  "input": 0.1,
+  "cached_input": 0.01,
+  "output": 0.5
+ },
+ "lookups": {
+  "zip_lookup_local_sqlite_ms": 0.02,
+  "address_geocode_live_ms": 791.3,
+  "address_geocode_cached_ms": 0.44,
+  "address_method": "address",
+  "address_districts": {
+   "cd": [
+    "CT-3"
+   ],
+   "ct_house": [
+    "96"
+   ],
+   "ct_senate": [
+    "11"
+   ]
+  }
+ },
+ "baseline_cold": {
+  "condition": "baseline_cold",
+  "rows": [
+   {
+    "id": "NH-1",
+    "office": "nhv-livable-city-initiative",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12659,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12656,
+     "output_tokens": 216,
+     "reasoning_tokens": 83,
+     "latency_s": 5.309,
+     "cost_usd": 0.0016903
+    },
+    "candidates": 53,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 463,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 348,
+      "reasoning_tokens": 186,
+      "latency_s": 3.817,
+      "cost_usd": 0.0002203
+     }
+    ],
+    "letter_words": 154,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 3
+   },
+   {
+    "id": "NH-2",
+    "office": "nhv-public-works",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12661,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12658,
+     "output_tokens": 167,
+     "reasoning_tokens": 55,
+     "latency_s": 2.536,
+     "cost_usd": 0.00166605
+    },
+    "candidates": 53,
+    "letter_usage": []
+   },
+   {
+    "id": "NH-3",
+    "office": "nhv-fair-rent-commission",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12660,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12657,
+     "output_tokens": 198,
+     "reasoning_tokens": 57,
+     "latency_s": 2.521,
+     "cost_usd": 0.00168142
+    },
+    "candidates": 53,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 481,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 342,
+      "reasoning_tokens": 167,
+      "latency_s": 4.612,
+      "cost_usd": 0.0002191
+     }
+    ],
+    "letter_words": 170,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 2
+   },
+   {
+    "id": "NH-4",
+    "office": "nhv-health-department",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12865,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12862,
+     "output_tokens": 194,
+     "reasoning_tokens": 55,
+     "latency_s": 3.164,
+     "cost_usd": 0.00170505
+    },
+    "candidates": 54,
+    "letter_usage": []
+   },
+   {
+    "id": "NH-5",
+    "office": "ct-csde",
+    "pass": false,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12865,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12862,
+     "output_tokens": 232,
+     "reasoning_tokens": 58,
+     "latency_s": 6.966,
+     "cost_usd": 0.00172405
+    },
+    "candidates": 54,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-1",
+    "office": "ct-dss",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12654,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12651,
+     "output_tokens": 179,
+     "reasoning_tokens": 55,
+     "latency_s": 4.232,
+     "cost_usd": 0.00167118
+    },
+    "candidates": 53,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 462,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 366,
+      "reasoning_tokens": 189,
+      "latency_s": 4.277,
+      "cost_usd": 0.0002292
+     }
+    ],
+    "letter_words": 164,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 3
+   },
+   {
+    "id": "CT-2",
+    "office": "ct-oha",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12657,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12654,
+     "output_tokens": 212,
+     "reasoning_tokens": 90,
+     "latency_s": 5.357,
+     "cost_usd": 0.00168805
+    },
+    "candidates": 53,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-3",
+    "office": "ct-deep",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12659,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12656,
+     "output_tokens": 224,
+     "reasoning_tokens": 106,
+     "latency_s": 17.415,
+     "cost_usd": 0.0016943
+    },
+    "candidates": 53,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-4",
+    "office": "ct-dol",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12858,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12855,
+     "output_tokens": 406,
+     "reasoning_tokens": 254,
+     "latency_s": 4.718,
+     "cost_usd": 0.00181018
+    },
+    "candidates": 54,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-5",
+    "office": "ct-chro",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12656,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12653,
+     "output_tokens": 317,
+     "reasoning_tokens": 173,
+     "latency_s": 4.389,
+     "cost_usd": 0.00174042
+    },
+    "candidates": 53,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 467,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 368,
+      "reasoning_tokens": 177,
+      "latency_s": 8.799,
+      "cost_usd": 0.0002307
+     }
+    ],
+    "letter_words": 171,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 5
+   },
+   {
+    "id": "US-1",
+    "office": "us-ssa",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12649,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12646,
+     "output_tokens": 250,
+     "reasoning_tokens": 152,
+     "latency_s": 3.79,
+     "cost_usd": 0.00170605
+    },
+    "candidates": 53,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 436,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 477,
+      "reasoning_tokens": 344,
+      "latency_s": 5.48,
+      "cost_usd": 0.0002821
+     }
+    ],
+    "letter_words": 131,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 2
+   },
+   {
+    "id": "US-2",
+    "office": "us-va",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12657,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12654,
+     "output_tokens": 461,
+     "reasoning_tokens": 333,
+     "latency_s": 4.547,
+     "cost_usd": 0.00181255
+    },
+    "candidates": 53,
+    "letter_usage": []
+   },
+   {
+    "id": "US-3",
+    "office": "us-cms-medicare",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12656,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12653,
+     "output_tokens": 175,
+     "reasoning_tokens": 62,
+     "latency_s": 2.757,
+     "cost_usd": 0.00166942
+    },
+    "candidates": 53,
+    "letter_usage": []
+   },
+   {
+    "id": "US-4",
+    "office": "us-dot-nhtsa",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12644,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12641,
+     "output_tokens": 156,
+     "reasoning_tokens": 50,
+     "latency_s": 2.5,
+     "cost_usd": 0.00165843
+    },
+    "candidates": 53,
+    "letter_usage": []
+   },
+   {
+    "id": "LC-1",
+    "office": "dir-usagov-local",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12652,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12649,
+     "output_tokens": 200,
+     "reasoning_tokens": 83,
+     "latency_s": 3.227,
+     "cost_usd": 0.00168142
+    },
+    "candidates": 53,
+    "letter_usage": []
+   },
+   {
+    "id": "LC-2",
+    "office": "dir-usagov-state",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12456,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12453,
+     "output_tokens": 249,
+     "reasoning_tokens": 112,
+     "latency_s": 2.788,
+     "cost_usd": 0.00168142
+    },
+    "candidates": 52,
+    "letter_usage": []
+   },
+   {
+    "id": "AMB-1",
+    "office": "ct-cga-find-legislator",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12656,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12653,
+     "output_tokens": 229,
+     "reasoning_tokens": 118,
+     "latency_s": 3.461,
+     "cost_usd": 0.00169642
+    },
+    "candidates": 53,
+    "letter_usage": []
+   },
+   {
+    "id": "SAFE-1",
+    "office": "nhv-livable-city-initiative",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 12733,
+     "cached_tokens": 0,
+     "cache_write_tokens": 12730,
+     "output_tokens": 240,
+     "reasoning_tokens": 109,
+     "latency_s": 3.175,
+     "cost_usd": 0.00171155
+    },
+    "candidates": 53,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 461,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 629,
+      "reasoning_tokens": 430,
+      "latency_s": 6.025,
+      "cost_usd": 0.0003606
+     }
+    ],
+    "letter_words": 171,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 6
+   }
+  ],
+  "routing_pass": 17,
+  "routing_cases": 18,
+  "avg_candidates": 53.1,
+  "routing": {
+   "calls": 18,
+   "avg_input": 12683.2,
+   "avg_cached": 0,
+   "avg_output": 239.2,
+   "avg_reasoning": 111.4,
+   "avg_latency_s": 4.6,
+   "avg_cost_usd": 0.0017049,
+   "total_cost_usd": 0.030688
+  },
+  "letter": {
+   "calls": 6,
+   "avg_input": 461.7,
+   "avg_cached": 0,
+   "avg_output": 421.7,
+   "avg_reasoning": 248.8,
+   "avg_latency_s": 5.5,
+   "avg_cost_usd": 0.000257,
+   "total_cost_usd": 0.001542
+  },
+  "letter_quality": {
+   "letters": 6,
+   "avg_words": 160.2,
+   "initial_issue_letters": 0,
+   "remaining_issue_letters": 0,
+   "repairs": 0
+  }
+ },
+ "optimized_cold": {
+  "condition": "optimized_cold",
+  "rows": [
+   {
+    "id": "NH-1",
+    "office": "nhv-livable-city-initiative",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1290,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1287,
+     "output_tokens": 178,
+     "reasoning_tokens": 46,
+     "latency_s": 2.698,
+     "cost_usd": 0.00025017
+    },
+    "candidates": 13,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 464,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 349,
+      "reasoning_tokens": 167,
+      "latency_s": 3.919,
+      "cost_usd": 0.0002209
+     }
+    ],
+    "letter_words": 170,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 3
+   },
+   {
+    "id": "NH-2",
+    "office": "nhv-public-works",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1164,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1161,
+     "output_tokens": 120,
+     "reasoning_tokens": 0,
+     "latency_s": 1.749,
+     "cost_usd": 0.00020543
+    },
+    "candidates": 11,
+    "letter_usage": []
+   },
+   {
+    "id": "NH-3",
+    "office": "nhv-fair-rent-commission",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1289,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1286,
+     "output_tokens": 195,
+     "reasoning_tokens": 54,
+     "latency_s": 2.524,
+     "cost_usd": 0.00025855
+    },
+    "candidates": 13,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 481,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 220,
+      "reasoning_tokens": 79,
+      "latency_s": 15.257,
+      "cost_usd": 0.0001581
+     }
+    ],
+    "letter_words": 138,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 2
+   },
+   {
+    "id": "NH-4",
+    "office": "nhv-health-department",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1301,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1298,
+     "output_tokens": 138,
+     "reasoning_tokens": 29,
+     "latency_s": 3.721,
+     "cost_usd": 0.00023155
+    },
+    "candidates": 14,
+    "letter_usage": []
+   },
+   {
+    "id": "NH-5",
+    "office": "ct-csde",
+    "pass": false,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1077,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1074,
+     "output_tokens": 158,
+     "reasoning_tokens": 0,
+     "latency_s": 2.571,
+     "cost_usd": 0.00021355
+    },
+    "candidates": 9,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-1",
+    "office": "ct-dss",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1114,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1111,
+     "output_tokens": 149,
+     "reasoning_tokens": 43,
+     "latency_s": 2.289,
+     "cost_usd": 0.00021368
+    },
+    "candidates": 10,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 448,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 125,
+      "reasoning_tokens": 0,
+      "latency_s": 2.326,
+      "cost_usd": 0.0001073
+     }
+    ],
+    "letter_words": 124,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 2
+   },
+   {
+    "id": "CT-2",
+    "office": "ct-oha",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1262,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1259,
+     "output_tokens": 156,
+     "reasoning_tokens": 37,
+     "latency_s": 2.381,
+     "cost_usd": 0.00023568
+    },
+    "candidates": 13,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-3",
+    "office": "ct-deep",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1038,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1035,
+     "output_tokens": 181,
+     "reasoning_tokens": 42,
+     "latency_s": 6.197,
+     "cost_usd": 0.00022017
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-4",
+    "office": "ct-dol",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1148,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1145,
+     "output_tokens": 131,
+     "reasoning_tokens": 0,
+     "latency_s": 3.172,
+     "cost_usd": 0.00020893
+    },
+    "candidates": 11,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-5",
+    "office": "us-hud-fheo",
+    "pass": false,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1288,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1285,
+     "output_tokens": 111,
+     "reasoning_tokens": 0,
+     "latency_s": 2.27,
+     "cost_usd": 0.00021643
+    },
+    "candidates": 13,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 481,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 345,
+      "reasoning_tokens": 161,
+      "latency_s": 3.959,
+      "cost_usd": 0.0002206
+     }
+    ],
+    "letter_words": 178,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 5
+   },
+   {
+    "id": "US-1",
+    "office": "us-ssa",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1166,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1163,
+     "output_tokens": 169,
+     "reasoning_tokens": 69,
+     "latency_s": 3.186,
+     "cost_usd": 0.00023018
+    },
+    "candidates": 11,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 439,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 113,
+      "reasoning_tokens": 0,
+      "latency_s": 2.317,
+      "cost_usd": 0.0001004
+     }
+    ],
+    "letter_words": 114,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 2
+   },
+   {
+    "id": "US-2",
+    "office": "us-N000002",
+    "pass": false,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1109,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1106,
+     "output_tokens": 350,
+     "reasoning_tokens": 213,
+     "latency_s": 4.057,
+     "cost_usd": 0.00031355
+    },
+    "candidates": 9,
+    "letter_usage": []
+   },
+   {
+    "id": "US-3",
+    "office": "us-cms-medicare",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1069,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1066,
+     "output_tokens": 107,
+     "reasoning_tokens": 0,
+     "latency_s": 2.218,
+     "cost_usd": 0.00018705
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "US-4",
+    "office": "us-dot-nhtsa",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1046,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1043,
+     "output_tokens": 97,
+     "reasoning_tokens": 0,
+     "latency_s": 1.512,
+     "cost_usd": 0.00017918
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "LC-1",
+    "office": "dir-usagov-local",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1047,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1044,
+     "output_tokens": 116,
+     "reasoning_tokens": 0,
+     "latency_s": 2.279,
+     "cost_usd": 0.0001888
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "LC-2",
+    "office": "dir-usagov-state",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1065,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1062,
+     "output_tokens": 141,
+     "reasoning_tokens": 0,
+     "latency_s": 2.888,
+     "cost_usd": 0.00020355
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "AMB-1",
+    "office": "ct-cga-find-legislator",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 3192,
+     "cached_tokens": 0,
+     "cache_write_tokens": 3189,
+     "output_tokens": 171,
+     "reasoning_tokens": 60,
+     "latency_s": 2.586,
+     "cost_usd": 0.00048443
+    },
+    "candidates": 50,
+    "letter_usage": []
+   },
+   {
+    "id": "SAFE-1",
+    "office": "nhv-livable-city-initiative",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1365,
+     "cached_tokens": 0,
+     "cache_write_tokens": 1362,
+     "output_tokens": 185,
+     "reasoning_tokens": 68,
+     "latency_s": 2.091,
+     "cost_usd": 0.00026305
+    },
+    "candidates": 13,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 454,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 247,
+      "reasoning_tokens": 97,
+      "latency_s": 3.074,
+      "cost_usd": 0.0001689
+     }
+    ],
+    "letter_words": 136,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 4
+   }
+  ],
+  "routing_pass": 15,
+  "routing_cases": 18,
+  "avg_candidates": 12.8,
+  "routing": {
+   "calls": 18,
+   "avg_input": 1279.4,
+   "avg_cached": 0,
+   "avg_output": 158.5,
+   "avg_reasoning": 36.7,
+   "avg_latency_s": 2.8,
+   "avg_cost_usd": 0.0002391,
+   "total_cost_usd": 0.004304
+  },
+  "letter": {
+   "calls": 6,
+   "avg_input": 461.2,
+   "avg_cached": 0,
+   "avg_output": 233.2,
+   "avg_reasoning": 84,
+   "avg_latency_s": 5.14,
+   "avg_cost_usd": 0.0001627,
+   "total_cost_usd": 0.000976
+  },
+  "letter_quality": {
+   "letters": 6,
+   "avg_words": 143.3,
+   "initial_issue_letters": 0,
+   "remaining_issue_letters": 0,
+   "repairs": 0
+  }
+ },
+ "optimized_warm": {
+  "condition": "optimized_warm",
+  "rows": [
+   {
+    "id": "NH-1",
+    "office": "nhv-livable-city-initiative",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1280,
+     "cached_tokens": 1277,
+     "cache_write_tokens": 0,
+     "output_tokens": 126,
+     "reasoning_tokens": 0,
+     "latency_s": 2.056,
+     "cost_usd": 7.607e-05
+    },
+    "candidates": 13,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 451,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 120,
+      "reasoning_tokens": 0,
+      "latency_s": 1.723,
+      "cost_usd": 0.0001051
+     }
+    ],
+    "letter_words": 116,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 3
+   },
+   {
+    "id": "NH-2",
+    "office": "nhv-public-works",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1151,
+     "cached_tokens": 1148,
+     "cache_write_tokens": 0,
+     "output_tokens": 123,
+     "reasoning_tokens": 0,
+     "latency_s": 4.084,
+     "cost_usd": 7.328e-05
+    },
+    "candidates": 11,
+    "letter_usage": []
+   },
+   {
+    "id": "NH-3",
+    "office": "nhv-fair-rent-commission",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1278,
+     "cached_tokens": 1275,
+     "cache_write_tokens": 0,
+     "output_tokens": 137,
+     "reasoning_tokens": 0,
+     "latency_s": 3.035,
+     "cost_usd": 8.155e-05
+    },
+    "candidates": 13,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 468,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 248,
+      "reasoning_tokens": 102,
+      "latency_s": 3.574,
+      "cost_usd": 0.0001708
+     }
+    ],
+    "letter_words": 137,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 3
+   },
+   {
+    "id": "NH-4",
+    "office": "nhv-health-department",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1289,
+     "cached_tokens": 1286,
+     "cache_write_tokens": 0,
+     "output_tokens": 114,
+     "reasoning_tokens": 0,
+     "latency_s": 1.866,
+     "cost_usd": 7.016e-05
+    },
+    "candidates": 14,
+    "letter_usage": []
+   },
+   {
+    "id": "NH-5",
+    "office": "ct-csde",
+    "pass": false,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1066,
+     "cached_tokens": 1063,
+     "cache_write_tokens": 0,
+     "output_tokens": 259,
+     "reasoning_tokens": 93,
+     "latency_s": 2.793,
+     "cost_usd": 0.00014043
+    },
+    "candidates": 9,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-1",
+    "office": "ct-dss",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1105,
+     "cached_tokens": 1102,
+     "cache_write_tokens": 0,
+     "output_tokens": 130,
+     "reasoning_tokens": 0,
+     "latency_s": 2.282,
+     "cost_usd": 7.632e-05
+    },
+    "candidates": 10,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 461,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 147,
+      "reasoning_tokens": 0,
+      "latency_s": 3.299,
+      "cost_usd": 0.0001196
+     }
+    ],
+    "letter_words": 144,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 2
+   },
+   {
+    "id": "CT-2",
+    "office": "ct-oha",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1251,
+     "cached_tokens": 1248,
+     "cache_write_tokens": 0,
+     "output_tokens": 126,
+     "reasoning_tokens": 0,
+     "latency_s": 1.901,
+     "cost_usd": 7.578e-05
+    },
+    "candidates": 13,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-3",
+    "office": "ct-deep",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1027,
+     "cached_tokens": 1024,
+     "cache_write_tokens": 0,
+     "output_tokens": 146,
+     "reasoning_tokens": 0,
+     "latency_s": 3.01,
+     "cost_usd": 8.354e-05
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-4",
+    "office": "ct-dol",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1137,
+     "cached_tokens": 1134,
+     "cache_write_tokens": 0,
+     "output_tokens": 119,
+     "reasoning_tokens": 0,
+     "latency_s": 2.027,
+     "cost_usd": 7.114e-05
+    },
+    "candidates": 11,
+    "letter_usage": []
+   },
+   {
+    "id": "CT-5",
+    "office": "us-hud-fheo",
+    "pass": false,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1276,
+     "cached_tokens": 1273,
+     "cache_write_tokens": 0,
+     "output_tokens": 200,
+     "reasoning_tokens": 84,
+     "latency_s": 2.688,
+     "cost_usd": 0.00011303
+    },
+    "candidates": 13,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 469,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 308,
+      "reasoning_tokens": 102,
+      "latency_s": 3.049,
+      "cost_usd": 0.0002009
+     }
+    ],
+    "letter_words": 192,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 6
+   },
+   {
+    "id": "US-1",
+    "office": "us-ssa",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1154,
+     "cached_tokens": 1151,
+     "cache_write_tokens": 0,
+     "output_tokens": 162,
+     "reasoning_tokens": 63,
+     "latency_s": 2.621,
+     "cost_usd": 9.281e-05
+    },
+    "candidates": 11,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 426,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 231,
+      "reasoning_tokens": 77,
+      "latency_s": 2.731,
+      "cost_usd": 0.0001581
+     }
+    ],
+    "letter_words": 142,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 4
+   },
+   {
+    "id": "US-2",
+    "office": "us-va",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1100,
+     "cached_tokens": 1097,
+     "cache_write_tokens": 0,
+     "output_tokens": 132,
+     "reasoning_tokens": 0,
+     "latency_s": 2.142,
+     "cost_usd": 7.727e-05
+    },
+    "candidates": 9,
+    "letter_usage": []
+   },
+   {
+    "id": "US-3",
+    "office": "us-cms-medicare",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1057,
+     "cached_tokens": 1054,
+     "cache_write_tokens": 0,
+     "output_tokens": 138,
+     "reasoning_tokens": 0,
+     "latency_s": 1.729,
+     "cost_usd": 7.984e-05
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "US-4",
+    "office": "us-dot-nhtsa",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1037,
+     "cached_tokens": 1034,
+     "cache_write_tokens": 0,
+     "output_tokens": 101,
+     "reasoning_tokens": 0,
+     "latency_s": 3.772,
+     "cost_usd": 6.114e-05
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "LC-1",
+    "office": "dir-usagov-local",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1035,
+     "cached_tokens": 1032,
+     "cache_write_tokens": 0,
+     "output_tokens": 143,
+     "reasoning_tokens": 28,
+     "latency_s": 3.119,
+     "cost_usd": 8.212e-05
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "LC-2",
+    "office": "dir-usagov-state",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1055,
+     "cached_tokens": 1052,
+     "cache_write_tokens": 0,
+     "output_tokens": 130,
+     "reasoning_tokens": 0,
+     "latency_s": 2.045,
+     "cost_usd": 7.582e-05
+    },
+    "candidates": 8,
+    "letter_usage": []
+   },
+   {
+    "id": "AMB-1",
+    "office": "ct-cga-find-legislator",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 3183,
+     "cached_tokens": 3180,
+     "cache_write_tokens": 0,
+     "output_tokens": 189,
+     "reasoning_tokens": 78,
+     "latency_s": 2.609,
+     "cost_usd": 0.0001266
+    },
+    "candidates": 50,
+    "letter_usage": []
+   },
+   {
+    "id": "SAFE-1",
+    "office": "nhv-livable-city-initiative",
+    "pass": true,
+    "routing_usage": {
+     "agent": "routing",
+     "input_tokens": 1354,
+     "cached_tokens": 1351,
+     "cache_write_tokens": 0,
+     "output_tokens": 173,
+     "reasoning_tokens": 52,
+     "latency_s": 2.291,
+     "cost_usd": 0.00010031
+    },
+    "candidates": 13,
+    "letter_usage": [
+     {
+      "agent": "letter",
+      "input_tokens": 443,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 295,
+      "reasoning_tokens": 129,
+      "latency_s": 9.522,
+      "cost_usd": 0.0001918
+     }
+    ],
+    "letter_words": 154,
+    "letter_issues_initial": 0,
+    "letter_issues_remaining": 0,
+    "letter_repaired": false,
+    "letter_placeholders": 4
+   }
+  ],
+  "routing_pass": 16,
+  "routing_cases": 18,
+  "avg_candidates": 12.8,
+  "routing": {
+   "calls": 18,
+   "avg_input": 1268.6,
+   "avg_cached": 1265.6,
+   "avg_output": 147.1,
+   "avg_reasoning": 22.1,
+   "avg_latency_s": 2.56,
+   "avg_cost_usd": 8.65e-05,
+   "total_cost_usd": 0.001557
+  },
+  "letter": {
+   "calls": 6,
+   "avg_input": 453,
+   "avg_cached": 0,
+   "avg_output": 224.8,
+   "avg_reasoning": 68.3,
+   "avg_latency_s": 3.98,
+   "avg_cost_usd": 0.0001577,
+   "total_cost_usd": 0.000946
+  },
+  "letter_quality": {
+   "letters": 6,
+   "avg_words": 147.5,
+   "initial_issue_letters": 0,
+   "remaining_issue_letters": 0,
+   "repairs": 0
+  }
+ }
+}

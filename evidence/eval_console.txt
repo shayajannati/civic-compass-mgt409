@@ -1,0 +1,23 @@
+NH-1   PASS  municipal nhv-livable-city-initiative
+NH-2   PASS  municipal nhv-public-works
+NH-3   PASS  municipal nhv-fair-rent-commission
+NH-4   PASS  municipal nhv-health-department
+NH-5   PASS  state     ct-csde
+CT-1   PASS  state     ct-dss
+CT-2   PASS  state     ct-oha
+CT-3   PASS  state     ct-deep
+CT-4   PASS  state     ct-dol
+CT-5   PASS  state     ct-chro
+US-1   PASS  federal   us-ssa
+US-2   PASS  federal   us-va
+US-3   PASS  federal   us-cms-medicare
+US-4   PASS  federal   us-dot-nhtsa
+LC-1   PASS  municipal dir-usagov-local
+LC-2   PASS  state     dir-usagov-state
+AMB-1  PASS  state     ct-cga-find-legislator
+SAFE-1 PASS  municipal nhv-livable-city-initiative
+BAD-1  PASS  rejected: Please enter a valid 5-digit ZIP code.
+BAD-2  PASS  rejected: That ZIP code was not found in Census ZIP Code Tabulation Areas. Please check it.
+BAD-3  PASS  rejected: Please describe the situation in at least a sentence (20+ characters).
+BAD-4  PASS  rejected: Please choose an issue category.
+{"variant": "optimized", "run_at": "2026-10-26T00:37:44", "routing_cases": 18, "routing_passed": 18, "malformed_cases": 4, "malformed_passed": 4}
