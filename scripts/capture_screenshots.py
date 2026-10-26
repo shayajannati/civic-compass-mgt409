@@ -35,11 +35,11 @@ SSA = dict(name="Pat Morgan", zip="06511", category="benefits",
 
 def fill(page, data: dict, street: str | None = None) -> None:
     for k in ("name", "zip", "description", "outcome"):
-        page.fill(f"[name={k}]", data[k])
-    page.select_option("[name=category]", data["category"])
+        page.fill(f"#issue-form [name={k}]", data[k])
+    page.select_option("#issue-form [name=category]", data["category"])
     if street:
         page.click("details.more summary")
-        page.fill("[name=street]", street)
+        page.fill("#issue-form [name=street]", street)
 
 
 def route(page, data: dict, street: str | None = None) -> None:

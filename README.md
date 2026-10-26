@@ -1,6 +1,6 @@
 # Civic Compass
 
-**From your concern to the right government office.**
+**Know where to turn.**
 
 Civic Compass helps U.S. residents who don't know how government is organized. You describe a problem in plain words ("my landlord won't fix the heat"). The app then:
 

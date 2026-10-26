@@ -220,8 +220,11 @@ def test_missing_key_gives_setup_error(monkeypatch):
 
 # ---------- redesign additions: purpose page and display-only ZIP map ----------
 def test_purpose_page_and_nav():
+    import re
     r = client.get("/purpose")
-    assert r.status_code == 200 and "Government should be easier to navigate." in r.text
+    visible = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", r.text))   # heading has a <br> for balance
+    assert r.status_code == 200 and "Government should be easier to navigate." in visible
+    assert "Born from a real need." in visible
     assert "Not an official government website" in r.text
     home = client.get("/").text
     assert "Know where to turn." in home and "Start with your concern." in home

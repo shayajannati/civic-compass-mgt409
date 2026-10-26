@@ -425,3 +425,222 @@ Start implementing the requested changes now, prioritizing polish, stability, an
 ## Prompt 6 — 2026-10-26
 
 I approve the redesign. Commit it, merge into main without force-pushing, push to the existing GitHub repo, and verify with an anonymous clone.
+
+---
+
+## Prompt 7 — 2026-10-26
+
+can you give me the link to open civic compass
+
+---
+
+## Prompt 8 — 2026-10-26
+
+i had it push what do you think
+
+---
+
+## Prompt 9 — 2026-10-26
+
+We are making a final, carefully scoped refinement to Civic Compass before submitting my MGT 409 final project.
+Project directory: `~/Desktop/AI Class/civic compass`
+GitHub repository: https://github.com/shayajannati/civic-compass-mgt409
+The application is already built, tested, published, and working well. The recent redesign introduced our fig-inspired color palette, Alata/Cardo typography, the OUR PURPOSE page, and the interactive map.
+I have reviewed the redesigned website and am very happy with it overall. I also tested the complete workflow myself, and a friend independently tested the complete workflow successfully.
+Please implement the following final improvements. Preserve all existing functionality, verified data, safety features, testing evidence, and working application behavior.
+1. FIX THE OUR PURPOSE HEADING
+The heading currently reads:
+"Government should be easier to navigate."
+The line wrapping looks awkward because almost the entire sentence appears on one line, leaving only "navigate." on the next.
+Please make the heading visually balanced, ideally:
+Government should be
+easier to navigate.
+Preserve the exact words and punctuation.
+Adjust the heading's maximum width, line breaks, and typography so that it looks intentional and elegant. Use a responsive treatment so the heading continues to look balanced on smaller screens.
+Don't let a single word hang awkwardly on its own line.
+2. MAKE THE WEBSITE MORE COLORFUL
+My main critique of the current redesign is that it feels a little too beige.
+I still love our fig-inspired palette, typography, and sophisticated editorial aesthetic, but I want to see substantially more color throughout the website.
+Our established palette:
+
+* Deep plum — #493D50
+* Muted burgundy — #653D48
+* Dark evergreen — #304849
+* Olive/sage — #929A58
+* Warm terracotta — #BB6D60
+* Dusty rose — #A66B70
+* Ivory — approximately #F4F0EA
+
+Please use these colors more confidently and intentionally.
+Suggested improvements:
+Homepage
+
+* Introduce stronger plum or evergreen backgrounds in appropriate sections.
+* Make the hero area more visually distinctive while maintaining a sophisticated appearance.
+* Keep forms easy to read and use.
+* Use ivory to provide contrast and breathing room, rather than making nearly every section beige.
+
+Three numbered steps
+
+* Maintain the previously approved centered alignment.
+* Introduce more visual variety using complementary colors, backgrounds, or subtle accent treatments.
+* Make the steps feel like part of an intentional visual identity rather than three generic cards.
+
+OUR PURPOSE page
+
+* Introduce alternating plum, evergreen, and lighter sections.
+* Use color to create a clearer visual hierarchy between the personal origin story, broader mission, and future plans.
+* Avoid making every section look like a uniformly beige text block.
+* Ensure the heading "Government should be easier to navigate." remains visually prominent.
+
+Other pages
+
+* Bring the same visual identity into the results cards, navigation, buttons, map container, and letter interface.
+* Improve visual contrast and polish without changing functionality.
+
+This is NOT a request to use every color in every section.
+I want the website to feel colorful, cohesive, elegant, editorial, modern, and approachable. Avoid excessive gradients, decorative clutter, harsh saturation, or poor accessibility.
+Keep Alata for headings, navigation, and buttons, and Cardo for body text.
+Keep the compass logo, the tagline "Know where to turn.", the heading "Start with your concern.", uppercase navigation, and the established layout decisions.
+3. ADD THE PERSONAL INSPIRATION BEHIND CIVIC COMPASS
+I would like my personal motivation for creating Civic Compass included in the final report's Motivation section and in an appropriate section of the OUR PURPOSE page.
+This project was inspired by a real experience.
+I experienced a carbon monoxide incident in my apartment that required hospital treatment. During the aftermath, I received conflicting guidance about which government departments and agencies I should contact and how to address the situation.
+I am pursuing legal action related to the incident.
+The difficulty of identifying the appropriate government authority during an already stressful situation inspired me to create Civic Compass.
+Please express this professionally, thoughtfully, and authentically.
+Suggested wording for the report:
+The Inspiration Behind Civic Compass
+"Civic Compass was inspired by a personal experience navigating an urgent housing and public safety issue. After experiencing carbon monoxide exposure in my apartment that required hospital treatment, I received conflicting guidance about which government offices and agencies were responsible for addressing my concerns. As I began pursuing legal remedies, I encountered an additional challenge: determining where to turn for appropriate government assistance.
+This experience revealed a broader barrier to civic participation. Individuals navigating difficult circumstances may also be expected to understand complex and overlapping government jurisdictions before they can seek help.
+I created Civic Compass to reduce that burden. By combining geographic data, verified government directories, and AI-assisted correspondence, the application helps people identify appropriate government offices, understand their responsibilities, and communicate their concerns more effectively."
+For the OUR PURPOSE page, adapt this into a shorter, compelling, professionally written section explaining the project's origin.
+Suggested heading:
+Born from a real need.
+Maintain a personal but credible tone.
+Important safeguards:
+
+* Do not identify my apartment building, property management company, or individuals involved.
+* Do not speculate about fault, legal liability, or the outcome of litigation.
+* Do not embellish the incident or invent medical or legal details.
+* Do not imply that an agency investigated the incident unless that is established.
+* Do not imply that Civic Compass provides legal advice.
+* Preserve my account as a personal experience, not an independently established legal finding.
+* Because the repository and website are public and legal proceedings may be ongoing, show me the exact final personal narrative for approval before publishing it.
+
+Make sure the report clearly explains how this experience motivated the particular technical solution: jurisdiction-aware government routing, verified contact information, and personalized letter generation.
+4. UPDATE THE IMPACT SECTION WITH ACTUAL HUMAN TESTING
+We have now completed informal hands-on testing with two people.
+Test 1 — Developer usability testing
+I personally used Civic Compass and completed its core workflow:
+
+* Entered an issue.
+* Received a government-office recommendation.
+* Generated a personalized letter.
+* Reported that the application worked well.
+
+Test 2 — Independent user testing
+A friend who was not involved in developing Civic Compass independently used the website and completed the same core workflow:
+
+* Entered an issue.
+* Received a government-office recommendation.
+* Generated a personalized letter.
+* Reported that the application worked successfully.
+
+Please update the final report's Impact section to include this genuine qualitative usability evidence.
+Suggested language:
+"Preliminary usability testing was conducted with the developer and one independent participant. Both completed the application's core workflow, including entering an issue, receiving a government-office recommendation, and generating a personalized letter. Both reported that the application worked successfully.
+These observations provide initial qualitative evidence of usability beyond automated testing. However, the sample was small, no controlled timing or formal satisfaction measurements were collected, and the participants' reports do not independently establish the accuracy of the government-office recommendations. Broader usability studies remain an important next step."
+Maintain an academically credible tone.
+VERY IMPORTANT:
+
+* Do not invent exact completion times.
+* Do not invent quantitative satisfaction ratings.
+* Do not invent participant quotes.
+* Do not claim that an independent user study with a formal protocol occurred.
+* Do not claim that the correct office was externally verified during these user sessions.
+* Do not replace the existing 18-case routing evaluation or tokenomics evidence.
+* Clearly distinguish automated evaluations, developer testing, and independent-user feedback.
+* Update the report to reflect that informal external-user testing has occurred, while identifying additional structured studies as future work.
+
+The independent testing should strengthen the Impact section without overstating the evidence.
+5. FIX THE README TAGLINE
+The README still contains the old tagline:
+"From your concern to the right government office."
+Replace it with our finalized tagline:
+"Know where to turn."
+Make sure the same branding is used consistently in the website, report, slides, README, and appropriate metadata.
+Do not alter any substantive documentation unrelated to these changes.
+6. PRESERVE THE FUTURE DEVELOPMENT ROADMAP
+Keep the nationwide expansion plan, including:
+
+* Expansion to state and local government agencies across all 50 states.
+* Better coverage of municipal and county government.
+* More government office and contact directories.
+* Regularly updated government records.
+* Future interactive jurisdiction boundary overlays on the map.
+* Additional accessibility and language options.
+
+Clearly distinguish these proposed features from what Civic Compass currently implements.
+7. UPDATE THE REPORT AND SLIDES
+After implementing the approved design and content revisions, regenerate the deliverables as necessary.
+report.html
+
+* Keep the required eight-section structure.
+* Include the professionally written personal motivation.
+* Incorporate the genuine developer and independent-user testing evidence.
+* Preserve all measured tokenomics, routing, and safety results.
+* Include current, real screenshots where relevant.
+* Ensure the GitHub repository URL is visible and clickable.
+* Print to 10–15 US-letter-size pages.
+* Keep the report self-contained, with embedded screenshots.
+
+slides.html
+
+* Maximum 10 slides.
+* Maintain a coherent narrative and professional visual design.
+* Ensure screenshots reflect the final website.
+* Update relevant language about motivation and impact.
+* Preserve accurate technical evidence.
+* Include the correct, visible, clickable GitHub repository URL.
+* Check for overflow, readability problems, and broken elements.
+
+Do not significantly expand the slides or report with unnecessary material. Prefer thoughtful revisions to existing content.
+8. TEST EVERYTHING
+After the changes:
+
+1. Run all existing offline tests.
+2. Verify that the routing and letter-generation workflows still work.
+3. Inspect the redesigned homepage and OUR PURPOSE page.
+4. Check mobile and desktop layouts.
+5. Check the awkward heading line wrap is resolved.
+6. Check that the website uses noticeably more of the established palette.
+7. Check readability and accessibility.
+8. Verify that the interactive map still functions.
+9. Confirm the current report page count and slide count.
+10. Check embedded screenshots and both GitHub links.
+11. Inspect any changes to the final report for unsupported or exaggerated claims.
+12. Perform a final secrets and privacy check.
+13. Preserve the existing git history and verified evaluation evidence.
+14. Append this prompt verbatim to AI_prompts.md without altering previous entries.
+
+9. FINAL REVIEW AND PUBLISHING
+The deadline is October 26, 2026, at 6:00 PM Eastern, so work efficiently.
+Do not redesign the application from scratch or change any agent architecture.
+Make these edits locally and show me the updated appearance and personal narrative for review.
+Do not push to GitHub until I approve the final changes.
+Once approved, commit and push to the existing public repository using a normal push, then verify the published files match the local versions.
+Remember that the professor's Canvas instructions require ONLY:
+
+1. report.html
+2. slides.html
+3. An optional demonstration video
+
+The GitHub URL MUST appear in both required HTML files. Do not include any additional files in the Canvas submission.
+Please begin the final polish pass now, prioritize finishing before the deadline, and provide me with the actual test results and remaining submission steps.
+
+---
+
+## Prompt 10 — 2026-10-26
+
+I approve the narrative and design. Commit, merge into main without force-pushing, push, and verify the published files match local.

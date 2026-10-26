@@ -247,3 +247,100 @@ td.num { text-align: right; }
 .site-footer strong { font-weight: 700; color: #fff; }
 @media (max-width: 720px) { .footer-inner { grid-template-columns: 1fr; gap: 10px; } .header-inner { justify-content: center; } .main-nav { justify-content: center; } }
 @media (max-width: 560px) { .eyebrow::before, .eyebrow::after { display: none; } .eyebrow { letter-spacing: .14em; line-height: 1.5; } }
+
+/* ===================== Final polish: more confident color ===================== */
+/* Full-bleed bands inside the centered layout */
+.band { position: relative; background: var(--band-bg); box-shadow: 0 0 0 100vmax var(--band-bg); clip-path: inset(0 -100vmax); }
+.band-plum { --band-bg: var(--plum-island); color: #F4F0EA; }
+.band-evergreen { --band-bg: var(--winter-balsam); color: #F4F0EA; }
+.band-burgundy { --band-bg: var(--kung-fu); color: #F4F0EA; }
+.band-rose { --band-bg: #F1E4E2; }
+.band-sage { --band-bg: #ECEEDF; }
+.band-ivory { --band-bg: var(--ivory); }
+.band-plum h1, .band-plum h2, .band-plum h3, .band-evergreen h1, .band-evergreen h2, .band-evergreen h3, .band-burgundy h2, .band-burgundy p { color: #FFFFFF; }
+.band-plum a, .band-evergreen a { color: #F3D9D4; }
+
+/* Header: deep plum with ivory type */
+.site-header { background: var(--plum-island); border-bottom: 0; }
+.site-header::after { height: 4px; background: linear-gradient(90deg, var(--kung-fu) 0 25%, var(--angelic-choir) 25% 50%, var(--totally-cool) 50% 75%, var(--herald-of-spring) 75%); opacity: 1; bottom: -4px; }
+.brand, .brand:hover, .brand-name { color: #FFFFFF; }
+.brand-mark { color: #F4F0EA; }
+.brand-tag { color: #E4D6DC; }
+.main-nav a { color: #EDE5EC; }
+.main-nav a:hover { color: #FFFFFF; border-bottom-color: var(--angelic-choir); }
+.main-nav a[aria-current="page"] { color: #FFFFFF; border-bottom-color: var(--totally-cool); }
+
+/* Hero: evergreen band */
+.hero.band { max-width: none; padding: 70px 0 58px; margin-top: 4px; }
+.hero.band .eyebrow { color: #C9CF9E; }
+.hero.band .eyebrow::before, .hero.band .eyebrow::after { background: var(--totally-cool); }
+.hero.band .tagline { color: #FFFFFF; }
+.hero.band .lede { color: #E9EEEA; max-width: 66ch; }
+.hero.band .lede strong { color: #FFFFFF; }
+
+/* Steps: three colored cards, centered */
+.how { padding-top: 54px; }
+.step { border: 0; color: #F4F0EA; box-shadow: 0 14px 30px -20px rgba(43, 37, 48, .6); }
+.step:nth-child(1) { background: var(--plum-island); }
+.step:nth-child(2) { background: var(--kung-fu); }
+.step:nth-child(3) { background: var(--winter-balsam); }
+.step h3 { color: #FFFFFF; }
+.step p { color: #EDE6EA; }
+.step-num { border: 0; color: #FFFFFF; }
+.step:nth-child(1) .step-num { background: var(--herald-of-spring); }
+.step:nth-child(2) .step-num { background: var(--angelic-choir); color: #2B2530; }
+.step:nth-child(3) .step-num { background: var(--totally-cool); color: #2B2530; }
+.coverage-note { background: #ECEEDF; border: 0; border-left: 4px solid var(--totally-cool); border-radius: 4px; }
+
+/* Start section: soft rose band so the white form card stands out */
+.start-band { padding: 8px 0 18px; margin-top: 46px; }
+.start-band .start-heading { margin-top: 44px; color: var(--kung-fu); }
+.start-band .start-heading::after { background: var(--angelic-choir); }
+.form-card { background: #FFFFFF; border-top: 5px solid var(--kung-fu); }
+.card-num { background: var(--kung-fu); }
+.results .card { background: #FFFFFF; }
+.results > section.card:nth-of-type(1) { border-top: 5px solid var(--winter-balsam); }
+#letter-card { border-top: 5px solid var(--kung-fu) !important; }
+.placeholder { border-top: 5px solid var(--plum-island); }
+.level-pill { background: var(--kung-fu); }
+.office.primary { border-color: var(--kung-fu); box-shadow: inset 5px 0 0 var(--kung-fu); }
+.office .tag { color: var(--kung-fu); }
+.why { background: #ECEEDF; border-left-color: var(--totally-cool); }
+.chip { border-color: var(--herald-of-spring); color: var(--kung-fu); }
+.chip:hover { background: var(--kung-fu); color: #fff; border-color: var(--kung-fu); }
+.btn.navy { background: var(--winter-balsam); border-color: var(--winter-balsam); }
+.btn.navy:hover { background: #253A3B; }
+.review-row { background: #F1E4E2; border-color: #E6CFCC; }
+.zip-map { border: 2px solid var(--plum-island); }
+.map-caption { background: #F1E4E2; border-left: 3px solid var(--herald-of-spring); padding: 8px 10px; border-radius: 0 3px 3px 0; }
+th { background: #EDE6EC; }
+
+/* Purpose page bands */
+.purpose { max-width: none; padding: 0; }
+.purpose .band, .purpose .p-section { padding: 56px 0; }
+.purpose .inner { max-width: 780px; margin: 0 auto; }
+.purpose .p-hero { padding: 76px 0 64px; text-align: center; }
+.purpose .p-hero h1 { color: #FFFFFF; max-width: 13.5em; margin-left: auto; margin-right: auto; text-wrap: balance; }
+.purpose .p-hero .intro { color: #E4D6DC; margin-bottom: 0; }
+.purpose .p-hero .eyebrow { color: #C9CF9E; }
+.purpose .band h2::before { background: var(--angelic-choir); }
+.purpose .band-evergreen h2::before { background: var(--totally-cool); }
+.purpose .band-plum .status-tag.future, .purpose .band-evergreen .status-tag.future { background: #F1E4E2; color: var(--kung-fu); }
+.purpose .band-plum .roadmap li::before { color: #E3B3A9; }
+.purpose .band-plum .future-box { background: rgba(255, 255, 255, .07); border-color: rgba(255, 255, 255, .18); border-left-color: var(--angelic-choir); color: #F4F0EA; }
+.purpose .band-plum .future-box h3 { color: #FFFFFF; }
+.purpose .origin p { font-size: 1.16rem; }
+.purpose .origin .sig { font: italic 1rem var(--body); color: #C9D5D3; margin-top: 18px; }
+.purpose .band-rose .commitments li { border-color: #E2CFCC; }
+.purpose .helps li { background: #FFFFFF; border-top: 4px solid var(--kung-fu); }
+.purpose .helps li:nth-child(2) { border-top-color: var(--totally-cool); }
+.purpose .helps li:nth-child(3) { border-top-color: var(--angelic-choir); }
+.purpose .helps li:nth-child(4) { border-top-color: var(--winter-balsam); }
+.purpose .closing-band { padding: 60px 0; text-align: center; }
+.purpose .closing-band .closing { color: #FFFFFF; margin: 0 auto 26px; }
+.purpose .closing-band .closing::before { background: #E3B3A9; }
+.purpose .closing-band .btn.primary { background: #F4F0EA; color: var(--kung-fu); border-color: #F4F0EA; }
+.purpose .closing-band .btn.primary:hover { background: #FFFFFF; }
+.hero.slim { padding-bottom: 20px; }
+@media (max-width: 640px) { .purpose .p-hero h1 { max-width: 11em; } .purpose .band, .purpose .p-section { padding: 42px 0; } }
+@media (max-width: 640px) { .br-wide { display: none; } }
