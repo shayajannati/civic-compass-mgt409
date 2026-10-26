@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from run_eval import CASES, INJECTION  # noqa: E402
 EV = ROOT / "evidence"
 SHOTS = EV / "screenshots"
-REPO_URL = "https://github.com/REPLACE-WITH-YOUR-USERNAME/civic-compass"   # set before submitting
+REPO_URL = "https://github.com/shayajannati/civic-compass-mgt409"   # set before submitting
 AUTHOR = "Shaya Jannati"
 RUNS_PER_USER_MONTH = 3
 

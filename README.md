@@ -18,7 +18,7 @@ MGT 409 (AI Foundations for Managers) final project. Yale SOM, fall 2026.
 Requirements: **Python 3.11 or newer**, and the course `PORTKEY_API_KEY`.
 
 ```bash
-git clone <this-repo-url> civic-compass
+git clone https://github.com/shayajannati/civic-compass-mgt409.git civic-compass
 cd civic-compass
 python3 -m venv .venv
 source .venv/bin/activate            # Windows: .venv\Scripts\activate

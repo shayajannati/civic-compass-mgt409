@@ -168,3 +168,21 @@ Do not add new features unless needed to fix an important bug.
 
 Please give me a concise final status, including every rubric requirement, the results of actual tests, anything incomplete, and the exact remaining submission steps.
 Time is critical. Prioritize a complete, verified submission over optional improvements.
+
+---
+
+## Prompt 4 — 2026-10-26
+
+Yes! Please create the GitHub repository and push Civic Compass.
+
+1. Create a public GitHub repository called `civic-compass-mgt409` under my existing GitHub account.
+2. If GitHub authentication is required, ask me to complete it securely.
+3. Update the repository URL in the report and slides, then regenerate both files.
+4. Double-check that no API keys, passwords, personal data, or unnecessary files are being committed.
+5. Commit the final changes and push to `main` without force-pushing.
+6. Verify that the repository is publicly accessible by performing a fresh anonymous clone.
+7. Confirm that `report.html`, `slides.html`, the application code, README, and all necessary files are included.
+8. Give me the final GitHub URL and confirm that everything was published successfully.
+
+Please don't make any additional feature changes. We can update the Impact section after completing the user study.
+Once GitHub publication is verified, tell me exactly what I need to submit on Canvas. Do not submit to Canvas yet.

@@ -35,7 +35,7 @@
 - [x] Local git commit prepared (not pushed)
 
 ## Not done / needs the author
-- [ ] **Create the GitHub repo and push** (not done by the assistant, which is not authorized to publish). Then set `REPO_URL` in `scripts/build_deliverables.py` and re-run it.
+- [x] GitHub repo created and pushed: https://github.com/shayajannati/civic-compass-mgt409
 - [ ] **Run the user study** (`docs/user_study_protocol.md`) with one real person and record the results in `evidence/user_study.json` (format: `{"date", "participant", "table": {...}, "quotes": [...]}`); then re-run `build_deliverables.py`. The report currently says "pending".
 - [ ] Optional: 2–3 minute demo video.
 - [ ] Python 3.11 not run locally (only 3.14 is installed). Static check: `vermin` reports a minimum of Python 3.9 for app/, scripts/ and tests/.
