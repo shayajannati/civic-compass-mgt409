@@ -503,30 +503,7 @@ I want the website to feel colorful, cohesive, elegant, editorial, modern, and a
 Keep Alata for headings, navigation, and buttons, and Cardo for body text.
 Keep the compass logo, the tagline "Know where to turn.", the heading "Start with your concern.", uppercase navigation, and the established layout decisions.
 3. ADD THE PERSONAL INSPIRATION BEHIND CIVIC COMPASS
-I would like my personal motivation for creating Civic Compass included in the final report's Motivation section and in an appropriate section of the OUR PURPOSE page.
-This project was inspired by a real experience.
-I experienced a carbon monoxide incident in my apartment that required hospital treatment. During the aftermath, I received conflicting guidance about which government departments and agencies I should contact and how to address the situation.
-I am pursuing legal action related to the incident.
-The difficulty of identifying the appropriate government authority during an already stressful situation inspired me to create Civic Compass.
-Please express this professionally, thoughtfully, and authentically.
-Suggested wording for the report:
-The Inspiration Behind Civic Compass
-"Civic Compass was inspired by a personal experience navigating an urgent housing and public safety issue. After experiencing carbon monoxide exposure in my apartment that required hospital treatment, I received conflicting guidance about which government offices and agencies were responsible for addressing my concerns. As I began pursuing legal remedies, I encountered an additional challenge: determining where to turn for appropriate government assistance.
-This experience revealed a broader barrier to civic participation. Individuals navigating difficult circumstances may also be expected to understand complex and overlapping government jurisdictions before they can seek help.
-I created Civic Compass to reduce that burden. By combining geographic data, verified government directories, and AI-assisted correspondence, the application helps people identify appropriate government offices, understand their responsibilities, and communicate their concerns more effectively."
-For the OUR PURPOSE page, adapt this into a shorter, compelling, professionally written section explaining the project's origin.
-Suggested heading:
-Born from a real need.
-Maintain a personal but credible tone.
-Important safeguards:
-
-* Do not identify my apartment building, property management company, or individuals involved.
-* Do not speculate about fault, legal liability, or the outcome of litigation.
-* Do not embellish the incident or invent medical or legal details.
-* Do not imply that an agency investigated the incident unless that is established.
-* Do not imply that Civic Compass provides legal advice.
-* Preserve my account as a personal experience, not an independently established legal finding.
-* Because the repository and website are public and legal proceedings may be ongoing, show me the exact final personal narrative for approval before publishing it.
+[redacted for privacy: this part of the prompt described the personal experience that inspired Civic Compass, suggested wording for the report's Motivation section and the OUR PURPOSE page (suggested heading: "Born from a real need."), and privacy safeguards for publishing it. The wording that was approved appears in report.html.]
 
 Make sure the report clearly explains how this experience motivated the particular technical solution: jurisdiction-aware government routing, verified contact information, and personalized letter generation.
 4. UPDATE THE IMPACT SECTION WITH ACTUAL HUMAN TESTING
@@ -656,3 +633,28 @@ wait can you take my name off the website since it is publci
 ## Prompt 12 — 2026-10-26
 
 Yes, commit and push the name removal to main (normal push) and verify it's published.
+
+---
+
+## Prompt 13 — 2026-10-26
+
+I want to make one final privacy-related change to Civic Compass.
+Please remove the personal story about my [redacted for privacy] from the public-facing website, specifically the OUR PURPOSE page.
+Keep the OUR PURPOSE page itself, including its mission, explanation of the problem Civic Compass solves, and commitment to accessible civic engagement. Replace the personal story with a more general explanation of how difficult it can be to identify the appropriate government office during a housing, health, or public safety concern.
+IMPORTANT:
+
+* Do not remove or rewrite the personal motivation in my final academic report (`report.html`). I want that story preserved in my submitted essay.
+* Do not change `slides.html`.
+* Do not alter the AI agents, features, datasets, or application logic.
+* Do not regenerate the report or slides.
+* Verify that the website still works after the change.
+* Commit and push this privacy-only change to the existing GitHub repository using a normal push.
+* Confirm that the personal story no longer appears on the current public-facing OUR PURPOSE page.
+
+Please preserve the existing Canvas submission files exactly as they are.
+
+---
+
+## Prompt 14 — 2026-10-26
+
+Yes, redact the personal story from AI_prompts.md (replace those details with a [redacted for privacy] note), commit and push normally.
